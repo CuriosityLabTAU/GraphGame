@@ -1,0 +1,9 @@
+in GraphGameMainApp_1 created debug file
+in GraphGameMainApp_2
+in build_1
+in build_2 after reading config file.
+in build_3 after init communication.
+in build_4 after Utils.image_folder.
+in build_5 created graph_config_path.
+in build_6 created screen manager.
+in build_7 created zero screen.

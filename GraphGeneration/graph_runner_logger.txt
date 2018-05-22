@@ -1,0 +1,16 @@
+Adding node, real=False, serial=56de6db7-3fef-43df-bbc5-7d1c629f23ae, num=2, location=2303.05:2463.0
+Creating edge, edge=2169:2163 - 2303.05:2463.0
+Adding node, real=False, serial=6a112d8c-bb9d-47b4-a085-496543b93101, num=3, location=1849.0:2300.58
+Creating edge, edge=1849.0:2300.58 - 2169:2163
+Adding node, real=False, serial=8341ba9f-a427-4b81-9b07-0dd3a6ec1e81, num=4, location=1849.0:1941.8
+Creating edge, edge=1849.0:1941.8 - 1879:1911
+Triming data from graph
+Number of slops found = 3
+Number of edges in slope: , slope=-1.034 = 1, edges=[(Point(1849.0, 1941.8), Point(1879, 1911), -1.034, slope:-1.034, const:3853.67, edge1:(1255, 2556), edge2:(1879, 1911))]
+Number of edges in slope: , slope=2.238 = 1, edges=[(Point(2169, 2163), Point(2303.05, 2463.0), 2.238, slope:2.238, const:-2691.222, edge1:(2169, 2163), edge2:(2450, 2792))]
+Number of edges in slope: , slope=-0.43 = 1, edges=[(Point(1849.0, 2300.58), Point(2169, 2163), -0.43, slope:-0.43, const:3095.65, edge1:(1255, 2556), edge2:(2169, 2163))]
+Adding extra edges to edge list
+removing nodes with no neighbors
+removed 0 nodes
+Finished triming data:, num_of_edges=3, num_real_node=2, num_of_node=5
+edge list:, edges=[(Point(2169, 2163), Point(2303.05, 2463.0), 2.238, slope:2.238, const:-2691.222, edge1:(2169, 2163), edge2:(2450, 2792)), (Point(1849.0, 2300.58), Point(2169, 2163), -0.43, slope:-0.43, const:3095.65, edge1:(1255, 2556), edge2:(2169, 2163)), (Point(1849.0, 1941.8), Point(1879, 1911), -1.034, slope:-1.034, const:3853.67, edge1:(1255, 2556), edge2:(1879, 1911))]

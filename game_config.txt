@@ -1,0 +1,13 @@
+Default.graphs_folder=GraphsData
+Default.tester_graphs_folder=TesterGraphsData
+Default.image_folder=Images
+Default.max_turns=6
+Default.graph_config_path=192.168.1.254
+Default.log_level=DEBUG
+Default.logger_output_type=file
+Default.logger_writing_location=test_log.txt
+Cloud.server_ip=192.168.1.254
+Buttons.btn_1=1
+Buttons.btn_2=2
+Buttons.btn_3=3
+Buttons.btn_4=4

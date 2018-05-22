@@ -1,0 +1,29 @@
+Node 'n1' has these possible neighbors: set(['n12', 'n13', 'n11', 'n14', 'n15', 'n8', 'n2', 'n3', 'n4', 'n5', 'n6', 'n7'])
+Node 'n2' has these possible neighbors: set(['n12', 'n13', 'n10', 'n11', 'n14', 'n8', 'n9', 'n1', 'n4', 'n5', 'n6', 'n7'])
+Node 'n3' has these possible neighbors: set(['n12', 'n13', 'n11', 'n14', 'n15', 'n8', 'n9', 'n1', 'n2', 'n4', 'n5', 'n6', 'n7'])
+Node 'n4' has these possible neighbors: set(['n13', 'n14', 'n15', 'n8', 'n1', 'n2', 'n3', 'n5', 'n6'])
+Node 'n5' has these possible neighbors: set(['n12', 'n13', 'n10', 'n11', 'n14', 'n15', 'n8', 'n9', 'n1', 'n2', 'n3', 'n4', 'n6', 'n7'])
+Node 'n6' has these possible neighbors: set(['n12', 'n13', 'n10', 'n11', 'n14', 'n15', 'n8', 'n9', 'n1', 'n2', 'n3', 'n4', 'n5', 'n7'])
+Node 'n7' has these possible neighbors: set(['n12', 'n13', 'n10', 'n11', 'n14', 'n15', 'n8', 'n9', 'n1', 'n2', 'n3', 'n4', 'n5', 'n6'])
+Node 'n8' has these possible neighbors: set(['n12', 'n13', 'n10', 'n11', 'n14', 'n15', 'n9', 'n1', 'n2', 'n3', 'n4', 'n5', 'n6', 'n7'])
+Node 'n9' has these possible neighbors: set(['n12', 'n13', 'n11', 'n14', 'n15', 'n8', 'n2', 'n3', 'n4', 'n5', 'n6', 'n7'])
+Node 'n10' has these possible neighbors: set(['n12', 'n13', 'n11', 'n14', 'n15', 'n8', 'n1', 'n2', 'n3', 'n4', 'n5', 'n6', 'n7'])
+Node 'n11' has these possible neighbors: set(['n12', 'n10', 'n14', 'n15', 'n8', 'n9', 'n1', 'n2', 'n3', 'n4', 'n5', 'n6', 'n7'])
+Node 'n12' has these possible neighbors: set(['n13', 'n10', 'n11', 'n14', 'n15', 'n8', 'n9', 'n1', 'n2', 'n3', 'n4', 'n5', 'n6', 'n7'])
+Node 'n13' has these possible neighbors: set(['n12', 'n10', 'n11', 'n14', 'n15', 'n8', 'n9', 'n1', 'n2', 'n3', 'n4', 'n5', 'n6', 'n7'])
+Node 'n14' has these possible neighbors: set(['n12', 'n13', 'n10', 'n11', 'n15', 'n8', 'n9', 'n1', 'n2', 'n3', 'n4', 'n5', 'n6', 'n7'])
+Node 'n15' has these possible neighbors: set(['n12', 'n13', 'n10', 'n11', 'n14', 'n8', 'n9', 'n1', 'n2', 'n3', 'n4', 'n5', 'n6', 'n7'])
+Creating edge, edge=2169:2163 - 2450:2792
+Creating edge, edge=2169:2163 - 1255:2556
+Creating edge, edge=1255:2556 - 1879:1911
+Creating edge, edge=1255:2556 - 772:2120
+Creating edge, edge=343:1456 - 319:2011
+Creating edge, edge=902:741 - 345:833
+Creating edge, edge=902:741 - 1322:1531
+Creating edge, edge=2289:374 - 2006:877
+Creating edge, edge=772:2120 - 343:1456
+Creating edge, edge=343:1456 - 902:741
+Creating edge, edge=2006:877 - 902:741
+Creating edge, edge=1322:1531 - 1514:1113
+Creating edge, edge=2676:1082 - 2289:374
+Creating edge, edge=319:2011 - 748:2434

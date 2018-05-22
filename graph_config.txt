@@ -1,0 +1,16 @@
+GeneralParams.NodeCount=20
+GeneralParams.AllowCrossing=False
+GeneralParams.LineWidth=10
+GeneralParams.LineColour=white
+GeneralParams.GraphSizeX=5000
+GeneralParams.GraphSizeY=5000
+GeneralParams.Colours=red,green,blue,white
+GeneralParams.Shapes=circle
+NodeData.NodeSize=250
+NodeData.ExtraDistance=10
+NodeData.MaxNeighbors=3
+NodeData.MinNeighbors=1
+Buttons.btn_1 = 1
+Buttons.btn_2 = 2
+Buttons.btn_3 = 3
+Buttons.btn_4 = 4

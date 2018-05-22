@@ -1,0 +1,32 @@
+{
+  "answers": {
+    "title": "תשובות",
+
+    "ans_type_1": {
+      "ans1": "אדום",
+      "ans2": "כחול",
+      "ans3": "צהוב"
+    },
+
+    "ans_type_2": {
+      "ans1": "כן",
+      "ans2": "לא"
+    },
+
+    "answer_graph_type":{
+      "user_answer":"-התשובה שלכם",
+      "discovered_graph_answer":"-תשובה לפי הגרף שהתגלה",
+      "full_graph_answer":"-תשובה לפי הגרף המלא"
+    },
+    "graphs_types":{
+      "discovered_graph":" הגרף שגיליתם:",
+      "real_graph":" הגרף האמיתי:"
+    },
+    "scores":{
+      "subject_score":" הציון שלכם:",
+      "discovered_graph_score":" הציון לפי הגרף שגיליתם:",
+      "nodes_discovered":" אחוז העיגולים שגיליתם:"
+    },
+    "next_button": " המשך"
+  }
+}
