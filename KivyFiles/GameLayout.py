@@ -40,6 +40,7 @@ class GameLayout(FloatLayout):
             self.rt = RepeatedTimer(1, self.call_function)
         self.button_hider = self.get_button_hider()
 
+
     def set_button_functions(self):
         """
         This function is used in order to determine the functionality of the buttons
@@ -93,11 +94,13 @@ class GameLayout(FloatLayout):
                     color=[0.8, 0.8, 0.8, 1])
         im4 = Image(source=path.join(Utils.image_folder, Utils.btn_4_img), allow_stretch=True, keep_ratio=False,
                     color=[0.8, 0.8, 0.8, 1])
+
         layout.add_widget(im1)
         layout.add_widget(im2)
         layout.add_widget(im3)
         layout.add_widget(im4)
         layout.pos = (0, 0)
+
         return layout
 
     def call_function(self):

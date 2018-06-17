@@ -9,6 +9,7 @@ LANGUAGE = 'Hebrew'  # 'Hebrew'
 from SupplementaryFiles.Utils import *
 import logging
 from kivy.core.audio import SoundLoader
+from kivy.logger import Logger
 
 
 class QuestionnaireScreen(Screen):
@@ -26,13 +27,20 @@ class QuestionnaireScreen(Screen):
         the answers out of the page.
         """
         # Init
+        Logger.debug("10")
         self.size = (200, 100)
+        Logger.debug("11")
         self.game_number = number
+        Logger.debug("12")
         self.main_app = main_app
+        Logger.debug("13")
         self.real_user = real_user
+        Logger.debug("14")
         self.main_app.user_answers = []
+        Logger.debug("15")
 
         self.questionnaire = QuestionDisplay(self)
+        Logger.debug("16")
 
     def on_enter(self, *args):
         log_str = 'start,'

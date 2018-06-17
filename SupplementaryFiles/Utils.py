@@ -12,10 +12,6 @@ class Utils:
     btn_3_img = 'button3.jpg'
     btn_4_img = 'button4.jpg'
 
-    btn_1_img = 'button1.jpg'
-    btn_2_img = 'button2.jpg'
-    btn_3_img = 'button3.jpg'
-    btn_4_img = 'button4.jpg'
 
     @staticmethod
     def read_game_config_file(config_path):

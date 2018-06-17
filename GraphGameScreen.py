@@ -54,6 +54,8 @@ class GraphGameScreen(Screen):
         self.button_ratio = button_ratio
 
         self.graph_game = GraphTabletDisplay(self)
+        Logger.debug("5")
+
 
     def on_enter(self, *args):
         log_str = 'start,'

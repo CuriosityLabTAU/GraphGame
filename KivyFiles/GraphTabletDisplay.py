@@ -9,6 +9,9 @@ from SupplementaryFiles.Point import Point
 from SupplementaryFiles.Utils import Utils
 from SupplementaryFiles.GLogger import *
 import logging
+from kivy.logger import Logger
+
+
 class GraphTabletDisplay:
     counter1 = 0
     counter2 = 0
@@ -23,13 +26,17 @@ class GraphTabletDisplay:
         self.max_turns = self.game_screen.max_turns
         self.button_presses = self.game_screen.button_presses
         self.layout = GameLayout(self)
+        Logger.debug("2")
         self.send_info_from_screen()
+        Logger.debug("3")
 
     def load(self):
         pass
 
     def send_info_from_screen(self):
+        Logger.debug("100")
         self.current_data_handler.add_view_to_db(self.get_info_from_screen())
+        Logger.debug("101")
 
     def end_game(self):
         self.is_playing = False
@@ -69,6 +76,7 @@ class GraphTabletDisplay:
                  the nodes is not onscreen, a new NodeObject is created where the x,y coordinates represent the
                  intersection between the edge and the screen and the serial and size are set to None.
         """
+        Logger.debug("102")
         if self.layout.is_zoomed_out:
             graph_nodes = self.layout.kivy_graph_out.kivy_graph.nodes
             graph_edges = self.layout.kivy_graph_out.kivy_graph.edges
@@ -77,9 +85,10 @@ class GraphTabletDisplay:
             graph_nodes = self.layout.kivy_graph_in.kivy_graph.nodes
             graph_edges = self.layout.kivy_graph_in.kivy_graph.edges
             graph_corners = self.layout.kivy_graph_in.kivy_graph.corners
-
+        Logger.debug("103")
         nodes = self.get_onscreen_nodes(graph_nodes, graph_corners)
         edges = self.get_onscreen_edges(graph_edges, graph_corners)
+        Logger.debug("104")
 
         return {'nodes': nodes, 'edges': edges}
 
@@ -88,18 +97,25 @@ class GraphTabletDisplay:
         Function goes over the list of nodes in the graph and checks which ones are displayed onscreen
         :return: A list containing the graph's nodes that are at least partially displayed onscreen.
         """
+        Logger.debug("200")
         bottom_left = graph_corners["bottom_left"]
+        Logger.debug("201")
         top_right = graph_corners["top_right"]
+        Logger.debug("202")
         displayed_nodes = []
         for node in graph_nodes:
             if node.serial != -1:
+                Logger.debug("203")
                 real_node = self.original_graph.get_node_by_serial(node.serial)
                 node_x = real_node.x
                 node_y = real_node.y
                 node_r = node.get_radius() + 0.9
+                Logger.debug("204")
                 if (node_x + node_r) > bottom_left.get_x() and (node_x - node_r) < top_right.get_x() and \
                             (node_y + node_r) > bottom_left.get_y() and (node_y - node_r) < top_right.get_y():
+                    Logger.debug("205")
                     displayed_nodes.append(real_node)
+        Logger.debug("206")
         return displayed_nodes
 
     def get_onscreen_edges(self, graph_edges, graph_corners):
@@ -113,27 +129,39 @@ class GraphTabletDisplay:
         """
 
         # create equations representing the screen's boarders
+        Logger.debug("300")
         top_left = Point(graph_corners["top_left"].get_x(), graph_corners["top_left"].get_y())
+        Logger.debug("301")
         top_right = Point(graph_corners["top_right"].get_x() + 0.001, graph_corners["top_right"].get_y())
+        Logger.debug("302")
         bottom_left = Point(graph_corners["bottom_left"].get_x() + 0.001, graph_corners["bottom_left"].get_y())
+        Logger.debug("303")
         bottom_right = Point(graph_corners["bottom_right"].get_x(), graph_corners["bottom_right"].get_y())
+        Logger.debug("304")
         top = LineEquation.create_equation(top_left, top_right)
+        Logger.debug("305")
         bottom = LineEquation.create_equation(bottom_left, bottom_right)
+        Logger.debug("306")
         left = LineEquation.create_equation(bottom_left, top_left)
+        Logger.debug("307")
         right = LineEquation.create_equation(bottom_right, top_right)
+        Logger.debug("308")
 
         displayed_edges = []
 
         for edge in graph_edges:
+            Logger.debug("309")
             real_node1 = self.original_graph.get_node_by_serial(edge.node1.serial)
             real_node2 = self.original_graph.get_node_by_serial(edge.node2.serial)
             point1 = Point(real_node1.x, real_node1.y)
             point2 = Point(real_node2.x, real_node2.y)
             edge_equation = LineEquation.create_equation(point1, point2)
+            Logger.debug("310")
             edge.set_slope(edge_equation)
-
+            Logger.debug("311")
             if self.is_node_onscreen(edge.node1, graph_corners):
                 if self.is_node_onscreen(edge.node2, graph_corners):
+                    Logger.debug("312")
                     # both of edge's node are onscreen
                     if edge.node1.get_x() < edge.node2.get_x():
                         curr_edge = (real_node1, real_node2, edge.slope, edge_equation)
@@ -141,17 +169,20 @@ class GraphTabletDisplay:
                         curr_edge = (real_node2, real_node1, edge.slope, edge_equation)
                 else:
                     # only the edge's first node in onscreen
+                    Logger.debug("313")
                     curr_edge = self.get_partly_visible_edge(edge, top, bottom, left, right, edge.node1, edge_equation)
             elif self.is_node_onscreen(edge.node2, graph_corners):
                 # only the edge's second node is onscreen
+                Logger.debug("314")
                 curr_edge = self.get_partly_visible_edge(edge, top, bottom, left, right, edge.node2, edge_equation)
             else:
                 # neither of the edge's nodes are onscreen
+                Logger.debug("315")
                 curr_edge = self.get_partly_visible_edge(edge, top, bottom, left, right, None, edge_equation)
 
             if curr_edge is not None:
                 displayed_edges.append(curr_edge)
-
+        Logger.debug("316")
         return displayed_edges
 
     def is_node_onscreen(self, node, screen_edges):
@@ -186,13 +217,15 @@ class GraphTabletDisplay:
         """
         first_node = None
         second_node = None
-
+        Logger.debug("400")
         if node:
             first_node = self.original_graph.get_node_by_serial(node.serial)
-
+        Logger.debug("401")
         # check if edge collides with top border
         if LineEquation.check_collision_point(edge_equation, top):
+            Logger.debug("402")
             col_point = LineEquation.get_equation_collision_point(edge_equation, top)
+            Logger.debug("403")
             location = {'x': round(col_point.x, 2), 'y': round(col_point.y, 2)}
             if first_node is not None:
                 second_node = NodeObject(serial=get_serial(), location=location, size=0)
@@ -200,7 +233,7 @@ class GraphTabletDisplay:
             else:
                 first_node = NodeObject(serial=get_serial(), location=location, size=0)
                 first_node.real = False
-
+        Logger.debug("404")
         # check if edge collides with bottom border
         if LineEquation.check_collision_point(edge_equation, bottom):
             col_point = LineEquation.get_equation_collision_point(edge_equation, bottom)
@@ -211,7 +244,7 @@ class GraphTabletDisplay:
             else:
                 first_node = NodeObject(serial=get_serial(), location=location, size=0)
                 first_node.real = False
-
+        Logger.debug("405")
         # check if edge collides with left border
         if LineEquation.check_collision_point(edge_equation, left):
             col_point = LineEquation.get_equation_collision_point(edge_equation, left)
@@ -223,7 +256,7 @@ class GraphTabletDisplay:
             else:
                 first_node = NodeObject(serial=get_serial(), location=location, size=0)
                 first_node.real = False
-
+        Logger.debug("406")
         # check if edge collides with right border
         if LineEquation.check_collision_point(edge_equation, right):
             col_point = LineEquation.get_equation_collision_point(edge_equation, right)
@@ -234,13 +267,16 @@ class GraphTabletDisplay:
             else:
                 first_node = NodeObject(serial=get_serial(), location=location, size=0)
                 first_node.real = False
-
+        Logger.debug("407")
         if second_node is None:
             if first_node is None:
+                Logger.debug("409")
                 return None
             else:
-                raise Exception("Only One viable node for onscreen edge: {}".format(edge.print_by_serial()))
-
+                Logger.debug("Only One viable node for onscreen edge: {}".format(edge.print_by_serial()))
+                return None
+                # raise Exception("Only One viable node for onscreen edge: {}".format(edge.print_by_serial()))
+        Logger.debug("410")
         min_dist = edge.node1.get_radius() / 2
         if first_node.distance(second_node) < min_dist:
             return None

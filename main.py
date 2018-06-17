@@ -119,6 +119,8 @@ from SupplementaryFiles.Enums import Colours, QuestionTypes
 f.write('14\n')
 f.close()
 
+from kivy.logger import Logger
+
 
 CONFIG_FILE_PATH = "game_config.txt"
 GRAPH_CONFIG_PATH = "graph_config.txt"
@@ -167,6 +169,8 @@ class GraphGameMainApp(App):
             # Step 1 - Graph Game
             self.question_list = graph_data.question_object_list
             self.game_screen.append(GraphGameScreen(name='game_graph_' + str(i_net)))
+            Logger.debug("6")
+            Logger.info("6")
             self.game_screen[-1].setup(number=i_net,
                                        main_app=self,
                                        max_turns=int(self.config['Default']['max_turns']),
@@ -174,26 +178,38 @@ class GraphGameMainApp(App):
                                        graph=graph_data,
                                        graph_config=graph_config_path,
                                        button_presses=self.button_presses)
+            Logger.debug("6-1")
+            Logger.info("6-1")
             self.game_screen[-1].add_widget(self.game_screen[-1].graph_game.layout)
             # Step 2 - Questionnaire
             #Goren - run nine graphs with question and then one without
             if i_net <9:
+                Logger.debug("6-2")
+                Logger.info("6-2")
                 self.game_screen.append(QuestionnaireScreen(name='game_questionnaire_' + str(i_net)))
+                Logger.debug("6-2.1")
+                Logger.info("6-2.1")
                 self.game_screen[-1].setup(number=i_net,
                                            main_app=self,
                                            real_user=self.real_user)
+                Logger.debug("6-2.2")
+                Logger.info("6-2.2")
                 self.game_screen[-1].add_widget(self.game_screen[-1].questionnaire.the_widget)
 
+                Logger.debug("6-3")
+                Logger.info("6-3")
                 # Step 3 - Results
                 self.game_screen.append(ResultScreen(name='game_results_' + str(i_net)))
                 self.game_screen[-1].setup(number=i_net,
                                            main_app=self,
                                            real_user=True)
                 self.game_screen[-1].add_widget(self.game_screen[-1].result_app.the_widget)
+        Logger.debug("7")
 
         for gs in self.game_screen:
             self.sm.add_widget(gs)
 
+        Logger.debug("8")
         self.sm.current = 'LoginScreen'
         return self.sm
 

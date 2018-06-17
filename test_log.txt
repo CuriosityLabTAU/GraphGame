@@ -1,12 +1,42 @@
+Adding node, real=False, serial=b455d0b9-f294-45d5-adaf-246a65ed84cc, num=3, location=1180.0:409.44
+Creating edge, edge=1180.0:409.44 - 1500:680
+Adding node, real=False, serial=6a6cdb38-a669-408b-bf2a-5ec5fecf9c84, num=4, location=1434.22:980.0
+Creating edge, edge=1434.22:980.0 - 1500:680
+Triming data from graph
+Number of slops found = 2
+Number of edges in slope: , slope=-4.56 = 1, edges=[(Point(1434.22, 980.0), Point(1500, 680), -4.56, slope:-4.56, const:7520.04, edge1:(1409, 1095), edge2:(1500, 680))]
+Number of edges in slope: , slope=0.845 = 1, edges=[(Point(1180.0, 409.44), Point(1500, 680), 0.845, slope:0.845, const:-587.665, edge1:(1157, 390), edge2:(1500, 680))]
+Adding extra edges to edge list
+removing nodes with no neighbors
+Found node with no neighbors - deleting:, real=True, serial=n8
+Found node with no neighbors - deleting:, real=True, serial=n2
+removed 2 nodes
+Finished triming data:, num_of_edges=2, num_real_node=1, num_of_node=3
+edge list:, edges=[(Point(1180.0, 409.44), Point(1500, 680), 0.845, slope:0.845, const:-587.665, edge1:(1157, 390), edge2:(1500, 680)), (Point(1434.22, 980.0), Point(1500, 680), -4.56, slope:-4.56, const:7520.04, edge1:(1409, 1095), edge2:(1500, 680))]
+Adding node, real=False, serial=129ba196-afe0-434b-b706-fbfc780a05a9, num=3, location=1092.84:1376.0
+Creating edge, edge=1092.84:1376.0 - 1371:1076
+Adding node, real=False, serial=c71ad742-186e-4308-9afa-23cf3d1ac2a9, num=4, location=1272.91:776.0
+Creating edge, edge=1272.91:776.0 - 1371:1076
+Triming data from graph
+Number of slops found = 2
+Number of edges in slope: , slope=3.058 = 1, edges=[(Point(1272.91, 776.0), Point(1371, 1076), 3.058, slope:3.058, const:-3116.572, edge1:(1234, 657), edge2:(1371, 1076))]
+Number of edges in slope: , slope=-1.078 = 1, edges=[(Point(1092.84, 1376.0), Point(1371, 1076), -1.078, slope:-1.078, const:2554.084, edge1:(1078, 1392), edge2:(1371, 1076))]
+Adding extra edges to edge list
+removing nodes with no neighbors
+Found node with no neighbors - deleting:, real=True, serial=n8
+Found node with no neighbors - deleting:, real=True, serial=n9
+removed 2 nodes
+Finished triming data:, num_of_edges=2, num_real_node=1, num_of_node=3
+edge list:, edges=[(Point(1092.84, 1376.0), Point(1371, 1076), -1.078, slope:-1.078, const:2554.084, edge1:(1078, 1392), edge2:(1371, 1076)), (Point(1272.91, 776.0), Point(1371, 1076), 3.058, slope:3.058, const:-3116.572, edge1:(1234, 657), edge2:(1371, 1076))]
 Creating edge, edge=756:1116 - 758:960
 Creating edge, edge=756:1116 - 904:1326
-Adding node, real=False, serial=4c6c0b1d-4769-4c38-a7ad-9f673ec3b8b5, num=5, location=922.2:816.0
+Adding node, real=False, serial=bd4d975b-cb4f-41cf-aabc-211467db66ce, num=5, location=922.2:816.0
 Creating edge, edge=756:1116 - 922.2:816.0
-Adding node, real=False, serial=d4b2aaf3-0495-4773-81fb-fa6008dfa802, num=6, location=668.8:816.0
+Adding node, real=False, serial=2f9957bc-3d31-479a-a1c4-5864b217d290, num=6, location=668.8:816.0
 Creating edge, edge=668.8:816.0 - 758:960
-Adding node, real=False, serial=11acb58c-52f3-4d71-8f99-8fed518364ea, num=7, location=1076.0:1319.29
+Adding node, real=False, serial=b6db8021-a4b5-47d1-8336-37a0835d1140, num=7, location=1076.0:1319.29
 Creating edge, edge=904:1326 - 1076.0:1319.29
-Adding node, real=False, serial=58bcf2dd-5400-4036-a3f9-de1b882e6ef1, num=8, location=1076.0:1089.43
+Adding node, real=False, serial=2769940a-a56e-4d56-a4f8-c6b3b67cd62e, num=8, location=1076.0:1089.43
 Creating edge, edge=758:960 - 1076.0:1089.43
 Creating edge, edge=758:960 - 904:1326
 Triming data from graph
@@ -25,69 +55,17 @@ Found node with no neighbors - deleting:, real=True, serial=n7
 removed 2 nodes
 Finished triming data:, num_of_edges=7, num_real_node=3, num_of_node=7
 edge list:, edges=[(Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960)), (Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326)), (Point(756, 1116), Point(922.2, 816.0), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737)), (Point(668.8, 816.0), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960)), (Point(904, 1326), Point(1076.0, 1319.29), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312)), (Point(758, 960), Point(1076.0, 1089.43), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110)), (Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326))]
-Adding node, real=False, serial=9a9520a3-5c94-454c-ac88-dec2364addfc, num=3, location=1092.84:1376.0
-Creating edge, edge=1092.84:1376.0 - 1371:1076
-Adding node, real=False, serial=974f4bd9-254b-4588-bffa-64c9e818bce9, num=4, location=1272.91:776.0
-Creating edge, edge=1272.91:776.0 - 1371:1076
-Triming data from graph
-Number of slops found = 2
-Number of edges in slope: , slope=3.058 = 1, edges=[(Point(1272.91, 776.0), Point(1371, 1076), 3.058, slope:3.058, const:-3116.572, edge1:(1234, 657), edge2:(1371, 1076))]
-Number of edges in slope: , slope=-1.078 = 1, edges=[(Point(1092.84, 1376.0), Point(1371, 1076), -1.078, slope:-1.078, const:2554.084, edge1:(1078, 1392), edge2:(1371, 1076))]
-Adding extra edges to edge list
-removing nodes with no neighbors
-Found node with no neighbors - deleting:, real=True, serial=n8
-Found node with no neighbors - deleting:, real=True, serial=n9
-removed 2 nodes
-Finished triming data:, num_of_edges=2, num_real_node=1, num_of_node=3
-edge list:, edges=[(Point(1092.84, 1376.0), Point(1371, 1076), -1.078, slope:-1.078, const:2554.084, edge1:(1078, 1392), edge2:(1371, 1076)), (Point(1272.91, 776.0), Point(1371, 1076), 3.058, slope:3.058, const:-3116.572, edge1:(1234, 657), edge2:(1371, 1076))]
-Adding node, real=False, serial=4cf8ecf1-9736-4f82-beac-593d072c0e66, num=3, location=515.15:1039.0
-Creating edge, edge=515.15:1039.0 - 577:1339
-Adding node, real=False, serial=0cc7d1ac-299f-453e-8715-0103a9b43b52, num=4, location=784.76:1039.0
-Creating edge, edge=577:1339 - 784.76:1039.0
-Adding node, real=False, serial=ba88f655-f91b-44e4-938e-563cc30f1440, num=5, location=897.0:1157.88
-Creating edge, edge=577:1339 - 897.0:1157.88
-Adding node, real=False, serial=1f63d1e0-288f-49f7-b808-fd11097982af, num=6, location=554.64:1039.0
-Adding node, real=False, serial=d2dc185e-9cb4-4aee-8583-0cb91008566e, num=7, location=897.0:1230.72
-Creating edge, edge=554.64:1039.0 - 897.0:1230.72
-Triming data from graph
-Number of slops found = 4
-Number of edges in slope: , slope=-0.566 = 1, edges=[(Point(577, 1339), Point(897.0, 1157.88), -0.566, slope:-0.566, const:1665.582, edge1:(577, 1339), edge2:(927, 1141))]
-Number of edges in slope: , slope=0.56 = 1, edges=[(Point(554.64, 1039.0), Point(897.0, 1230.72), 0.56, slope:0.56, const:728.4, edge1:(510, 1014), edge2:(1051, 1317))]
-Number of edges in slope: , slope=4.851 = 1, edges=[(Point(515.15, 1039.0), Point(577, 1339), 4.851, slope:4.851, const:-1460.01, edge1:(510, 1014), edge2:(577, 1339))]
-Number of edges in slope: , slope=-1.444 = 1, edges=[(Point(577, 1339), Point(784.76, 1039.0), -1.444, slope:-1.444, const:2172.188, edge1:(577, 1339), edge2:(892, 884))]
-Adding extra edges to edge list
-removing nodes with no neighbors
-Found node with no neighbors - deleting:, real=True, serial=n8
-Found node with no neighbors - deleting:, real=True, serial=n2
-removed 2 nodes
-Finished triming data:, num_of_edges=4, num_real_node=1, num_of_node=6
-edge list:, edges=[(Point(515.15, 1039.0), Point(577, 1339), 4.851, slope:4.851, const:-1460.01, edge1:(510, 1014), edge2:(577, 1339)), (Point(577, 1339), Point(784.76, 1039.0), -1.444, slope:-1.444, const:2172.188, edge1:(577, 1339), edge2:(892, 884)), (Point(577, 1339), Point(897.0, 1157.88), -0.566, slope:-0.566, const:1665.582, edge1:(577, 1339), edge2:(927, 1141)), (Point(554.64, 1039.0), Point(897.0, 1230.72), 0.56, slope:0.56, const:728.4, edge1:(510, 1014), edge2:(1051, 1317))]
-Adding node, real=False, serial=0b62a2b3-098d-4ed9-86a9-01f1ddd45595, num=3, location=1180.0:409.44
-Creating edge, edge=1180.0:409.44 - 1500:680
-Adding node, real=False, serial=0d6cd56d-6c1f-4259-9293-f46a0b517f27, num=4, location=1434.22:980.0
-Creating edge, edge=1434.22:980.0 - 1500:680
-Triming data from graph
-Number of slops found = 2
-Number of edges in slope: , slope=-4.56 = 1, edges=[(Point(1434.22, 980.0), Point(1500, 680), -4.56, slope:-4.56, const:7520.04, edge1:(1409, 1095), edge2:(1500, 680))]
-Number of edges in slope: , slope=0.845 = 1, edges=[(Point(1180.0, 409.44), Point(1500, 680), 0.845, slope:0.845, const:-587.665, edge1:(1157, 390), edge2:(1500, 680))]
-Adding extra edges to edge list
-removing nodes with no neighbors
-Found node with no neighbors - deleting:, real=True, serial=n8
-Found node with no neighbors - deleting:, real=True, serial=n2
-removed 2 nodes
-Finished triming data:, num_of_edges=2, num_real_node=1, num_of_node=3
-edge list:, edges=[(Point(1180.0, 409.44), Point(1500, 680), 0.845, slope:0.845, const:-587.665, edge1:(1157, 390), edge2:(1500, 680)), (Point(1434.22, 980.0), Point(1500, 680), -4.56, slope:-4.56, const:7520.04, edge1:(1409, 1095), edge2:(1500, 680))]
-Adding node, real=False, serial=f089fd6f-a889-43e7-a0a0-6ac642afef48, num=6, location=259.0:549.39
+Adding node, real=False, serial=08137fce-32e1-400d-b16f-8e77ce912a5c, num=6, location=259.0:549.39
 Creating edge, edge=259.0:549.39 - 579:741
 Creating edge, edge=579:741 - 847:589
-Adding node, real=False, serial=8e27c8d5-15d3-4ed5-b884-a9fe7147344d, num=7, location=899.0:907.4
+Adding node, real=False, serial=3cdaa385-75f9-4864-aba6-69641527ba35, num=7, location=899.0:907.4
 Creating edge, edge=579:741 - 899.0:907.4
 Creating edge, edge=541:504 - 847:589
 Creating edge, edge=541:504 - 734:867
-Adding node, real=False, serial=069be057-3c3d-4f32-b9c6-f77f2dcfc5a3, num=8, location=831.97:1041.0
+Adding node, real=False, serial=391fe73c-129d-48fb-848d-2583270c91ca, num=8, location=831.97:1041.0
 Creating edge, edge=734:867 - 831.97:1041.0
 Creating edge, edge=734:867 - 847:589
-Adding node, real=False, serial=8dd05a44-8441-497c-a87c-56e327153c31, num=9, location=259.0:542.77
+Adding node, real=False, serial=16e21c7c-53e2-418b-8670-6e69237a237c, num=9, location=259.0:542.77
 Creating edge, edge=259.0:542.77 - 541:504
 Triming data from graph
 Number of slops found = 8
@@ -106,12 +84,54 @@ Found node with no neighbors - deleting:, real=True, serial=n2
 removed 2 nodes
 Finished triming data:, num_of_edges=8, num_real_node=4, num_of_node=8
 edge list:, edges=[(Point(259.0, 549.39), Point(579, 741), 0.599, slope:0.599, const:394.25, edge1:(250, 544), edge2:(579, 741)), (Point(579, 741), Point(847, 589), -0.567, slope:-0.567, const:1069.293, edge1:(579, 741), edge2:(847, 589)), (Point(579, 741), Point(899.0, 907.4), 0.52, slope:0.52, const:439.92, edge1:(579, 741), edge2:(1010, 965)), (Point(541, 504), Point(847, 589), 0.278, slope:0.278, const:353.602, edge1:(541, 504), edge2:(847, 589)), (Point(541, 504), Point(734, 867), 1.881, slope:1.881, const:-513.621, edge1:(541, 504), edge2:(734, 867)), (Point(734, 867), Point(831.97, 1041.0), 1.776, slope:1.776, const:-436.584, edge1:(734, 867), edge2:(948, 1247)), (Point(734, 867), Point(847, 589), -2.46, slope:-2.46, const:2672.64, edge1:(734, 867), edge2:(847, 589)), (Point(259.0, 542.77), Point(541, 504), -0.137, slope:-0.137, const:578.25, edge1:(250, 544), edge2:(541, 504))]
-Adding node, real=False, serial=9c34f755-fd19-4643-8e6c-e2fde755bb6e, num=2, location=694.0:1378.28
+Creating edge, edge=575:1151 - 667:856
+Creating edge, edge=575:1151 - 821:1307
+Creating edge, edge=667:856 - 863:1085
+Adding node, real=False, serial=03bfb172-08f2-4b28-95a4-198bb2d157c3, num=5, location=895.0:1308.48
+Creating edge, edge=821:1307 - 895.0:1308.48
+Adding node, real=False, serial=0a19b4b9-d836-4fc2-a42f-4b764b03335f, num=6, location=895.0:1237.29
+Creating edge, edge=821:1307 - 895.0:1237.29
+Triming data from graph
+Number of slops found = 5
+Number of edges in slope: , slope=0.634 = 1, edges=[(Point(575, 1151), Point(821, 1307), 0.634, slope:0.634, const:786.45, edge1:(575, 1151), edge2:(821, 1307))]
+Number of edges in slope: , slope=-3.207 = 1, edges=[(Point(575, 1151), Point(667, 856), -3.207, slope:-3.207, const:2995.025, edge1:(575, 1151), edge2:(667, 856))]
+Number of edges in slope: , slope=-0.942 = 1, edges=[(Point(821, 1307), Point(895.0, 1237.29), -0.942, slope:-0.942, const:2080.382, edge1:(821, 1307), edge2:(1047, 1094))]
+Number of edges in slope: , slope=1.168 = 1, edges=[(Point(667, 856), Point(863, 1085), 1.168, slope:1.168, const:76.944, edge1:(667, 856), edge2:(863, 1085))]
+Number of edges in slope: , slope=0.02 = 1, edges=[(Point(821, 1307), Point(895.0, 1308.48), 0.02, slope:0.02, const:1290.58, edge1:(821, 1307), edge2:(1020, 1311))]
+Adding extra edges to edge list
+removing nodes with no neighbors
+Found node with no neighbors - deleting:, real=True, serial=n5
+removed 1 nodes
+Finished triming data:, num_of_edges=5, num_real_node=4, num_of_node=6
+edge list:, edges=[(Point(575, 1151), Point(667, 856), -3.207, slope:-3.207, const:2995.025, edge1:(575, 1151), edge2:(667, 856)), (Point(575, 1151), Point(821, 1307), 0.634, slope:0.634, const:786.45, edge1:(575, 1151), edge2:(821, 1307)), (Point(667, 856), Point(863, 1085), 1.168, slope:1.168, const:76.944, edge1:(667, 856), edge2:(863, 1085)), (Point(821, 1307), Point(895.0, 1308.48), 0.02, slope:0.02, const:1290.58, edge1:(821, 1307), edge2:(1020, 1311)), (Point(821, 1307), Point(895.0, 1237.29), -0.942, slope:-0.942, const:2080.382, edge1:(821, 1307), edge2:(1047, 1094))]
+Adding node, real=False, serial=f5ea91f5-6990-4f54-a78c-2f2c9a93ea71, num=3, location=515.15:1039.0
+Creating edge, edge=515.15:1039.0 - 577:1339
+Adding node, real=False, serial=6320016c-1e94-4181-b005-664440035a97, num=4, location=784.76:1039.0
+Creating edge, edge=577:1339 - 784.76:1039.0
+Adding node, real=False, serial=a01543cb-ee9a-43bb-baf7-8dd444d293c8, num=5, location=897.0:1157.88
+Creating edge, edge=577:1339 - 897.0:1157.88
+Adding node, real=False, serial=ede4ef29-5ad9-4dda-9712-135adcb8ceb9, num=6, location=554.64:1039.0
+Adding node, real=False, serial=981b8f4a-aa87-4365-8926-57f90d7f879a, num=7, location=897.0:1230.72
+Creating edge, edge=554.64:1039.0 - 897.0:1230.72
+Triming data from graph
+Number of slops found = 4
+Number of edges in slope: , slope=-0.566 = 1, edges=[(Point(577, 1339), Point(897.0, 1157.88), -0.566, slope:-0.566, const:1665.582, edge1:(577, 1339), edge2:(927, 1141))]
+Number of edges in slope: , slope=0.56 = 1, edges=[(Point(554.64, 1039.0), Point(897.0, 1230.72), 0.56, slope:0.56, const:728.4, edge1:(510, 1014), edge2:(1051, 1317))]
+Number of edges in slope: , slope=4.851 = 1, edges=[(Point(515.15, 1039.0), Point(577, 1339), 4.851, slope:4.851, const:-1460.01, edge1:(510, 1014), edge2:(577, 1339))]
+Number of edges in slope: , slope=-1.444 = 1, edges=[(Point(577, 1339), Point(784.76, 1039.0), -1.444, slope:-1.444, const:2172.188, edge1:(577, 1339), edge2:(892, 884))]
+Adding extra edges to edge list
+removing nodes with no neighbors
+Found node with no neighbors - deleting:, real=True, serial=n8
+Found node with no neighbors - deleting:, real=True, serial=n2
+removed 2 nodes
+Finished triming data:, num_of_edges=4, num_real_node=1, num_of_node=6
+edge list:, edges=[(Point(515.15, 1039.0), Point(577, 1339), 4.851, slope:4.851, const:-1460.01, edge1:(510, 1014), edge2:(577, 1339)), (Point(577, 1339), Point(784.76, 1039.0), -1.444, slope:-1.444, const:2172.188, edge1:(577, 1339), edge2:(892, 884)), (Point(577, 1339), Point(897.0, 1157.88), -0.566, slope:-0.566, const:1665.582, edge1:(577, 1339), edge2:(927, 1141)), (Point(554.64, 1039.0), Point(897.0, 1230.72), 0.56, slope:0.56, const:728.4, edge1:(510, 1014), edge2:(1051, 1317))]
+Adding node, real=False, serial=1c7e9482-9922-4ee6-a9c7-8b25a55ccc1f, num=2, location=694.0:1378.28
 Creating edge, edge=374:1377 - 694.0:1378.28
-Adding node, real=False, serial=06637f0b-33f1-48fc-a0b5-19b758b89f84, num=3, location=360.02:1077.0
+Adding node, real=False, serial=49163b2d-e6fd-4080-baf2-f500d95de8f1, num=3, location=360.02:1077.0
 Creating edge, edge=360.02:1077.0 - 374:1377
-Adding node, real=False, serial=69294e47-17fa-4a48-8ba1-c9f7481cf48f, num=4, location=622.4:1077.0
-Adding node, real=False, serial=3c9d6e0e-334e-4bd8-956f-8a3073a93873, num=5, location=694.0:1166.5
+Adding node, real=False, serial=27e4f6fa-4e25-4392-9b9d-f9a20e0dcbac, num=4, location=622.4:1077.0
+Adding node, real=False, serial=b807bea6-cce7-4ae7-b3ed-17d8025f6ea4, num=5, location=694.0:1166.5
 Creating edge, edge=622.4:1077.0 - 694.0:1166.5
 Triming data from graph
 Number of slops found = 3
@@ -125,16 +145,16 @@ removed 1 nodes
 Finished triming data:, num_of_edges=3, num_real_node=1, num_of_node=5
 edge list:, edges=[(Point(374, 1377), Point(694.0, 1378.28), 0.004, slope:0.004, const:1375.504, edge1:(374, 1377), edge2:(864, 1379)), (Point(360.02, 1077.0), Point(374, 1377), 21.458, slope:21.458, const:-6648.3, edge1:(350, 862), edge2:(374, 1377)), (Point(622.4, 1077.0), Point(694.0, 1166.5), 1.25, slope:1.25, const:299.0, edge1:(600, 1049), edge2:(864, 1379))]
 Creating edge, edge=720:768 - 975:859
-Adding node, real=False, serial=f14256b3-0ca0-4e5d-a8a4-8eb4f028e79a, num=6, location=655.0:1060.79
+Adding node, real=False, serial=8286310f-da68-4fb9-93fb-aceb350590ea, num=6, location=655.0:1060.79
 Creating edge, edge=655.0:1060.79 - 975:859
-Adding node, real=False, serial=145d4654-d63f-4eee-b9f7-a64190046fbf, num=7, location=1295.0:728.76
+Adding node, real=False, serial=6cf75eae-7fc7-4d70-a32e-c05c2e2ade06, num=7, location=1295.0:728.76
 Creating edge, edge=975:859 - 1295.0:728.76
-Adding node, real=False, serial=41e293e3-2cd0-4798-a52f-fdd0584011fd, num=8, location=1264.67:559.0
-Adding node, real=False, serial=b3577bc3-ace4-4b94-917d-2697c0f02ced, num=9, location=1295.0:616.32
+Adding node, real=False, serial=f321933f-578d-4513-afad-4f24bf20df38, num=8, location=1264.67:559.0
+Adding node, real=False, serial=bdbf3292-ef16-40a7-b4fc-defe2995aeb2, num=9, location=1295.0:616.32
 Creating edge, edge=1264.67:559.0 - 1295.0:616.32
-Adding node, real=False, serial=6b35cccd-f518-4242-827b-324f2718ce3a, num=10, location=893.24:1159.0
+Adding node, real=False, serial=2fff0667-6955-44bd-a5fc-c65a280bbd1c, num=10, location=893.24:1159.0
 Creating edge, edge=720:768 - 893.24:1159.0
-Adding node, real=False, serial=b76cbecc-3ced-411f-8a38-17c294bdee69, num=11, location=668.65:559.0
+Adding node, real=False, serial=5aaa6c2f-de38-4314-be54-f8dd73256bf7, num=11, location=668.65:559.0
 Creating edge, edge=668.65:559.0 - 720:768
 Triming data from graph
 Number of slops found = 6
@@ -153,40 +173,20 @@ Found node with no neighbors - deleting:, real=True, serial=n5
 removed 4 nodes
 Finished triming data:, num_of_edges=6, num_real_node=2, num_of_node=8
 edge list:, edges=[(Point(720, 768), Point(975, 859), 0.357, slope:0.357, const:510.96, edge1:(720, 768), edge2:(975, 859)), (Point(655.0, 1060.79), Point(975, 859), -0.631, slope:-0.631, const:1474.098, edge1:(558, 1122), edge2:(975, 859)), (Point(975, 859), Point(1295.0, 728.76), -0.407, slope:-0.407, const:1255.825, edge1:(975, 859), edge2:(1344, 709)), (Point(1264.67, 559.0), Point(1295.0, 616.32), 1.89, slope:1.89, const:-1831.23, edge1:(1107, 261), edge2:(1344, 709)), (Point(720, 768), Point(893.24, 1159.0), 2.257, slope:2.257, const:-857.04, edge1:(720, 768), edge2:(930, 1242)), (Point(668.65, 559.0), Point(720, 768), 4.07, slope:4.07, const:-2162.4, edge1:(620, 361), edge2:(720, 768))]
-Creating edge, edge=575:1151 - 667:856
-Creating edge, edge=575:1151 - 821:1307
-Creating edge, edge=667:856 - 863:1085
-Adding node, real=False, serial=5f8a190d-f097-4777-8506-876e2b86009f, num=5, location=895.0:1308.48
-Creating edge, edge=821:1307 - 895.0:1308.48
-Adding node, real=False, serial=76954d34-5443-441e-82f5-b9f651fb1111, num=6, location=895.0:1237.29
-Creating edge, edge=821:1307 - 895.0:1237.29
-Triming data from graph
-Number of slops found = 5
-Number of edges in slope: , slope=0.634 = 1, edges=[(Point(575, 1151), Point(821, 1307), 0.634, slope:0.634, const:786.45, edge1:(575, 1151), edge2:(821, 1307))]
-Number of edges in slope: , slope=-3.207 = 1, edges=[(Point(575, 1151), Point(667, 856), -3.207, slope:-3.207, const:2995.025, edge1:(575, 1151), edge2:(667, 856))]
-Number of edges in slope: , slope=-0.942 = 1, edges=[(Point(821, 1307), Point(895.0, 1237.29), -0.942, slope:-0.942, const:2080.382, edge1:(821, 1307), edge2:(1047, 1094))]
-Number of edges in slope: , slope=1.168 = 1, edges=[(Point(667, 856), Point(863, 1085), 1.168, slope:1.168, const:76.944, edge1:(667, 856), edge2:(863, 1085))]
-Number of edges in slope: , slope=0.02 = 1, edges=[(Point(821, 1307), Point(895.0, 1308.48), 0.02, slope:0.02, const:1290.58, edge1:(821, 1307), edge2:(1020, 1311))]
-Adding extra edges to edge list
-removing nodes with no neighbors
-Found node with no neighbors - deleting:, real=True, serial=n5
-removed 1 nodes
-Finished triming data:, num_of_edges=5, num_real_node=4, num_of_node=6
-edge list:, edges=[(Point(575, 1151), Point(667, 856), -3.207, slope:-3.207, const:2995.025, edge1:(575, 1151), edge2:(667, 856)), (Point(575, 1151), Point(821, 1307), 0.634, slope:0.634, const:786.45, edge1:(575, 1151), edge2:(821, 1307)), (Point(667, 856), Point(863, 1085), 1.168, slope:1.168, const:76.944, edge1:(667, 856), edge2:(863, 1085)), (Point(821, 1307), Point(895.0, 1308.48), 0.02, slope:0.02, const:1290.58, edge1:(821, 1307), edge2:(1020, 1311)), (Point(821, 1307), Point(895.0, 1237.29), -0.942, slope:-0.942, const:2080.382, edge1:(821, 1307), edge2:(1047, 1094))]
 Creating edge, edge=903:852 - 1193:625
 Creating edge, edge=708:993 - 903:852
-Adding node, real=False, serial=b0e4c4ea-30c0-4351-91e2-bdbfc9dd8ed5, num=6, location=669.26:1152.0
+Adding node, real=False, serial=6ae8da30-f3e9-47e9-b3fb-a4b6130239ea, num=6, location=669.26:1152.0
 Creating edge, edge=669.26:1152.0 - 903:852
-Adding node, real=False, serial=17ccade1-d76e-4b42-85f6-8606af59abe5, num=7, location=583.0:1074.29
-Adding node, real=False, serial=06aa3be9-4d86-4694-8359-13ee5fa23839, num=8, location=623.66:1152.0
+Adding node, real=False, serial=7ee47f4e-aa84-4e76-924b-cf6760fa0752, num=7, location=583.0:1074.29
+Adding node, real=False, serial=332e1a39-9c4d-464e-9d5a-297202c542c2, num=8, location=623.66:1152.0
 Creating edge, edge=583.0:1074.29 - 623.66:1152.0
-Adding node, real=False, serial=f021ca69-05f4-4003-a259-eff31fc73574, num=9, location=1223.0:730.93
+Adding node, real=False, serial=7bd6d4db-c424-409d-bc03-b0c5de32f306, num=9, location=1223.0:730.93
 Creating edge, edge=1193:625 - 1223.0:730.93
-Adding node, real=False, serial=14ff6a48-f581-46a3-9e10-fcd4174e353d, num=10, location=966.54:1152.0
+Adding node, real=False, serial=9380cb4f-5819-415a-9a75-e47878beb285, num=10, location=966.54:1152.0
 Creating edge, edge=708:993 - 966.54:1152.0
-Adding node, real=False, serial=8e6e28b1-1e99-48e8-bd64-1c3d0de45e38, num=11, location=1140.42:552.0
+Adding node, real=False, serial=aa8ed29a-52ff-4157-bed6-05b76398bfd2, num=11, location=1140.42:552.0
 Creating edge, edge=1140.42:552.0 - 1193:625
-Adding node, real=False, serial=1e1291d8-e57c-4d19-8f71-e1b011b65a56, num=12, location=583.0:897.5
+Adding node, real=False, serial=fda6a31c-c5a3-446c-a07e-e75002edadcd, num=12, location=583.0:897.5
 Creating edge, edge=583.0:897.5 - 708:993
 Triming data from graph
 Number of slops found = 8
@@ -206,647 +206,3 @@ Found node with no neighbors - deleting:, real=True, serial=n6
 removed 3 nodes
 Finished triming data:, num_of_edges=8, num_real_node=3, num_of_node=10
 edge list:, edges=[(Point(903, 852), Point(1193, 625), -0.783, slope:-0.783, const:1559.049, edge1:(903, 852), edge2:(1193, 625)), (Point(708, 993), Point(903, 852), -0.723, slope:-0.723, const:1504.884, edge1:(708, 993), edge2:(903, 852)), (Point(669.26, 1152.0), Point(903, 852), -1.284, slope:-1.284, const:2011.328, edge1:(642, 1187), edge2:(903, 852)), (Point(583.0, 1074.29), Point(623.66, 1152.0), 1.911, slope:1.911, const:-39.819, edge1:(429, 780), edge2:(642, 1187)), (Point(1193, 625), Point(1223.0, 730.93), 3.531, slope:3.531, const:-3587.483, edge1:(1193, 625), edge2:(1323, 1084)), (Point(708, 993), Point(966.54, 1152.0), 0.615, slope:0.615, const:557.58, edge1:(708, 993), edge2:(1079, 1221)), (Point(1140.42, 552.0), Point(1193, 625), 1.389, slope:1.389, const:-1032.047, edge1:(923, 250), edge2:(1193, 625)), (Point(583.0, 897.5), Point(708, 993), 0.763, slope:0.763, const:452.673, edge1:(429, 780), edge2:(708, 993))]
-, action=data, comment=start,turns=6,, obj=game_graph_0
-Creating edge, edge=756:1116 - 758:960
-Creating edge, edge=756:1116 - 904:1326
-Creating edge, edge=756:1116 - 966:737
-Adding node, real=False, serial=c1a8adfd-2e93-40bc-88c2-a808d0fa310a, num=14, location=1212.86:903.38
-Creating edge, edge=966:737 - 1212.86:903.38
-Adding node, real=False, serial=285fe36e-c18f-409b-b162-d5f0b19c6d33, num=15, location=1212.86:1041.83
-Creating edge, edge=1127:1110 - 1212.86:1041.83
-Adding node, real=False, serial=31c50bb1-fd07-46e7-b7d6-dbe895c0315b, num=16, location=589.14:687.43
-Creating edge, edge=589.14:687.43 - 758:960
-Adding node, real=False, serial=ac0e1a94-ea11-400f-a94f-4e615e798d70, num=17, location=1212.86:1313.95
-Creating edge, edge=904:1326 - 1212.86:1313.95
-Adding node, real=False, serial=c433a0da-abdb-4984-bd04-57d76cf1b0e5, num=18, location=1212.86:1235.7
-Creating edge, edge=1127:1110 - 1212.86:1235.7
-Creating edge, edge=758:960 - 1127:1110
-Creating edge, edge=758:960 - 904:1326
-Triming data from graph
-Number of slops found = 10
-Number of edges in slope: , slope=1.419 = 2, edges=[(Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326)), (Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326))]
-Found collision point of both edges, eq1=slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326), eq2=slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=756:1116 - 904:1326
-Number of edges in slope: , slope=-0.794 = 1, edges=[(Point(1127, 1110), Point(1212.86, 1041.83), -0.794, slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967))]
-Number of edges in slope: , slope=1.614 = 2, edges=[(Point(668.8, 816.0), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960)), (Point(589.14, 687.43), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960))]
-Found collision point of both edges, eq1=slope:1.614, const:-263.438, edge1:(589.14, 687.43), edge2:(758, 960), eq2=slope:1.614, const:-263.438, edge1:(668.8, 816.0), edge2:(758, 960), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=589.14:687.43 - 758:960
-Number of edges in slope: , slope=-1.805 = 2, edges=[(Point(756, 1116), Point(922.2, 816.0), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737)), (Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737))]
-Found collision point of both edges, eq1=slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737), eq2=slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(922.2, 816.0), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=756:1116 - 966:737
-Number of edges in slope: , slope=0.407 = 2, edges=[(Point(758, 960), Point(1076.0, 1089.43), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110)), (Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110))]
-Found collision point of both edges, eq1=slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110), eq2=slope:0.407, const:651.494, edge1:(758, 960), edge2:(1076.0, 1089.43), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=758:960 - 1127:1110
-Number of edges in slope: , slope=0.674 = 1, edges=[(Point(966, 737), Point(1212.86, 903.38), 0.674, slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967))]
-Number of edges in slope: , slope=1.464 = 1, edges=[(Point(1127, 1110), Point(1212.86, 1235.7), 1.464, slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312))]
-Number of edges in slope: , slope=2.507 = 2, edges=[(Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326)), (Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326))]
-Found collision point of both edges, eq1=slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326), eq2=slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=758:960 - 904:1326
-Number of edges in slope: , slope=-78.0 = 2, edges=[(Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960)), (Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960))]
-Found collision point of both edges, eq1=slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960), eq2=slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=756:1116 - 758:960
-Number of edges in slope: , slope=-0.039 = 2, edges=[(Point(904, 1326), Point(1076.0, 1319.29), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312)), (Point(904, 1326), Point(1212.86, 1313.95), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312))]
-Found collision point of both edges, eq1=slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1212.86, 1313.95), eq2=slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1076.0, 1319.29), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=904:1326 - 1212.86:1313.95
-Adding extra edges to edge list
-removing nodes with no neighbors
-Found node with no neighbors - deleting:, real=False, serial=d4b2aaf3-0495-4773-81fb-fa6008dfa802
-Found node with no neighbors - deleting:, real=True, serial=n3
-Found node with no neighbors - deleting:, real=True, serial=n5
-Found node with no neighbors - deleting:, real=True, serial=n6
-removed 4 nodes
-Finished triming data:, num_of_edges=10, num_real_node=5, num_of_node=13
-edge list:, edges=[(Point(966, 737), Point(1212.86, 903.38), 0.674, slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967)), (Point(1127, 1110), Point(1212.86, 1041.83), -0.794, slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967)), (Point(1127, 1110), Point(1212.86, 1235.7), 1.464, slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312)), (Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326)), (Point(589.14, 687.43), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(589.14, 687.43), edge2:(758, 960)), (Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737)), (Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110)), (Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326)), (Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960)), (Point(904, 1326), Point(1212.86, 1313.95), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1212.86, 1313.95))]
-Creating edge, edge=756:1116 - 758:960
-Creating edge, edge=756:1116 - 904:1326
-Creating edge, edge=756:1116 - 966:737
-Adding node, real=False, serial=9f8f20ff-51da-4df1-bee0-396c664fe3c0, num=22, location=811.23:531.43
-Creating edge, edge=811.23:531.43 - 966:737
-Adding node, real=False, serial=7715afc4-8ab3-4a0d-b54e-b12c33ddaeb9, num=23, location=1214.86:904.73
-Creating edge, edge=966:737 - 1214.86:904.73
-Adding node, real=False, serial=4c906d2f-801e-4747-953f-bfdef6b3b1ad, num=24, location=1214.86:1040.24
-Creating edge, edge=1127:1110 - 1214.86:1040.24
-Creating edge, edge=517:571 - 758:960
-Adding node, real=False, serial=c52e66ca-d9e0-4edf-bc38-ca6e536e3d17, num=25, location=1214.86:1313.88
-Creating edge, edge=904:1326 - 1214.86:1313.88
-Adding node, real=False, serial=452798da-9189-40b5-933f-7090b3d510a4, num=26, location=1214.86:1238.63
-Creating edge, edge=1127:1110 - 1214.86:1238.63
-Creating edge, edge=758:960 - 1127:1110
-Creating edge, edge=758:960 - 904:1326
-Triming data from graph
-Number of slops found = 11
-Number of edges in slope: , slope=-0.794 = 2, edges=[(Point(1127, 1110), Point(1212.86, 1041.83), -0.794, slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967)), (Point(1127, 1110), Point(1214.86, 1040.24), -0.794, slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967))]
-Found collision point of both edges, eq1=slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1214.86, 1040.24), eq2=slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1212.86, 1041.83), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=1127:1110 - 1214.86:1040.24
-Number of edges in slope: , slope=1.419 = 2, edges=[(Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326)), (Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326))]
-Found collision point of both edges, eq1=slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326), eq2=slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=1.614 = 2, edges=[(Point(589.14, 687.43), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(589.14, 687.43), edge2:(758, 960)), (Point(517, 571), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960))]
-Found collision point of both edges, eq1=slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960), eq2=slope:1.614, const:-263.438, edge1:(589.14, 687.43), edge2:(758, 960), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=0, main_node=16
-Cleaning connection to another node, node_to_remove=16, main_node=0
-Creating edge, edge=517:571 - 758:960
-Number of edges in slope: , slope=-1.805 = 2, edges=[(Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737)), (Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737))]
-Found collision point of both edges, eq1=slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737), eq2=slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=0.407 = 2, edges=[(Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110)), (Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110))]
-Found collision point of both edges, eq1=slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110), eq2=slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=0.674 = 2, edges=[(Point(966, 737), Point(1212.86, 903.38), 0.674, slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967)), (Point(966, 737), Point(1214.86, 904.73), 0.674, slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967))]
-Found collision point of both edges, eq1=slope:0.674, const:85.916, edge1:(966, 737), edge2:(1214.86, 904.73), eq2=slope:0.674, const:85.916, edge1:(966, 737), edge2:(1212.86, 903.38), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=966:737 - 1214.86:904.73
-Number of edges in slope: , slope=1.464 = 2, edges=[(Point(1127, 1110), Point(1212.86, 1235.7), 1.464, slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312)), (Point(1127, 1110), Point(1214.86, 1238.63), 1.464, slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312))]
-Found collision point of both edges, eq1=slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1214.86, 1238.63), eq2=slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1212.86, 1235.7), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=1127:1110 - 1214.86:1238.63
-Number of edges in slope: , slope=2.507 = 2, edges=[(Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326)), (Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326))]
-Found collision point of both edges, eq1=slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326), eq2=slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=-78.0 = 2, edges=[(Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960)), (Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960))]
-Found collision point of both edges, eq1=slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960), eq2=slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=1.328 = 1, edges=[(Point(811.23, 531.43), Point(966, 737), 1.328, slope:1.328, const:-545.88, edge1:(710, 397), edge2:(966, 737))]
-Number of edges in slope: , slope=-0.039 = 2, edges=[(Point(904, 1326), Point(1212.86, 1313.95), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1212.86, 1313.95)), (Point(904, 1326), Point(1214.86, 1313.88), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312))]
-Found collision point of both edges, eq1=slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1214.86, 1313.88), eq2=slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1212.86, 1313.95), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=17, main_node=1
-Cleaning connection to another node, node_to_remove=1, main_node=17
-Creating edge, edge=904:1326 - 1214.86:1313.88
-Adding extra edges to edge list
-removing nodes with no neighbors
-Found node with no neighbors - deleting:, real=False, serial=31c50bb1-fd07-46e7-b7d6-dbe895c0315b
-Found node with no neighbors - deleting:, real=False, serial=ac0e1a94-ea11-400f-a94f-4e615e798d70
-Found node with no neighbors - deleting:, real=True, serial=n3
-Found node with no neighbors - deleting:, real=True, serial=n6
-removed 4 nodes
-Finished triming data:, num_of_edges=16, num_real_node=6, num_of_node=17
-edge list:, edges=[(Point(811.23, 531.43), Point(966, 737), 1.328, slope:1.328, const:-545.88, edge1:(710, 397), edge2:(966, 737)), (Point(1127, 1110), Point(1214.86, 1040.24), -0.794, slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1214.86, 1040.24)), (Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326)), (Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326)), (Point(517, 571), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960)), (Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737)), (Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737)), (Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110)), (Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110)), (Point(966, 737), Point(1214.86, 904.73), 0.674, slope:0.674, const:85.916, edge1:(966, 737), edge2:(1214.86, 904.73)), (Point(1127, 1110), Point(1214.86, 1238.63), 1.464, slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1214.86, 1238.63)), (Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326)), (Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326)), (Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960)), (Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960)), (Point(904, 1326), Point(1214.86, 1313.88), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1214.86, 1313.88))]
-Creating edge, edge=756:1116 - 758:960
-Creating edge, edge=756:1116 - 904:1326
-Adding node, real=False, serial=e3fa39f8-affc-410e-aba2-3b083bfc2b23, num=29, location=877.09:897.43
-Creating edge, edge=756:1116 - 877.09:897.43
-Adding node, real=False, serial=2ae6f029-2557-410c-8c14-d404f7757e52, num=30, location=1204.03:897.43
-Creating edge, edge=1204.03:897.43 - 1307:967
-Creating edge, edge=1265:1312 - 1307:967
-Creating edge, edge=1127:1110 - 1307:967
-Adding node, real=False, serial=90933864-1d9c-46b9-802a-bb70c0c96763, num=31, location=719.25:897.43
-Creating edge, edge=719.25:897.43 - 758:960
-Creating edge, edge=904:1326 - 1265:1312
-Creating edge, edge=1127:1110 - 1265:1312
-Creating edge, edge=758:960 - 1127:1110
-Creating edge, edge=758:960 - 904:1326
-Triming data from graph
-Number of slops found = 12
-Number of edges in slope: , slope=-0.794 = 2, edges=[(Point(1127, 1110), Point(1214.86, 1040.24), -0.794, slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1214.86, 1040.24)), (Point(1127, 1110), Point(1307, 967), -0.794, slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967))]
-Found collision point of both edges, eq1=slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967), eq2=slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1214.86, 1040.24), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=24, main_node=13
-Cleaning connection to another node, node_to_remove=13, main_node=24
-Creating edge, edge=1127:1110 - 1307:967
-Number of edges in slope: , slope=1.419 = 3, edges=[(Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326)), (Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326)), (Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326))]
-Found collision point of both edges, eq1=slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326), eq2=slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=756:1116 - 904:1326
-Found collision point of both edges, eq1=slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326), eq2=slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=1, main_node=2
-Cleaning connection to another node, node_to_remove=2, main_node=1
-Creating edge, edge=756:1116 - 904:1326
-Number of edges in slope: , slope=1.614 = 2, edges=[(Point(517, 571), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960)), (Point(719.25, 897.43), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960))]
-Found collision point of both edges, eq1=slope:1.614, const:-263.438, edge1:(719.25, 897.43), edge2:(758, 960), eq2=slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=0, main_node=20
-Cleaning connection to another node, node_to_remove=20, main_node=0
-Creating edge, edge=758:960 - 517:571
-Number of edges in slope: , slope=-1.805 = 3, edges=[(Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737)), (Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737)), (Point(756, 1116), Point(877.09, 897.43), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737))]
-Found collision point of both edges, eq1=slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(877.09, 897.43), eq2=slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=756:1116 - 966:737
-Found collision point of both edges, eq1=slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737), eq2=slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=9, main_node=2
-Cleaning connection to another node, node_to_remove=2, main_node=9
-Creating edge, edge=756:1116 - 966:737
-Number of edges in slope: , slope=0.407 = 3, edges=[(Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110)), (Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110)), (Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110))]
-Found collision point of both edges, eq1=slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110), eq2=slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=758:960 - 1127:1110
-Found collision point of both edges, eq1=slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110), eq2=slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=13, main_node=0
-Cleaning connection to another node, node_to_remove=0, main_node=13
-Creating edge, edge=758:960 - 1127:1110
-Number of edges in slope: , slope=0.674 = 2, edges=[(Point(966, 737), Point(1214.86, 904.73), 0.674, slope:0.674, const:85.916, edge1:(966, 737), edge2:(1214.86, 904.73)), (Point(1204.03, 897.43), Point(1307, 967), 0.674, slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967))]
-Found collision point of both edges, eq1=slope:0.674, const:85.916, edge1:(1204.03, 897.43), edge2:(1307, 967), eq2=slope:0.674, const:85.916, edge1:(966, 737), edge2:(1214.86, 904.73), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=23, main_node=9
-Cleaning connection to another node, node_to_remove=9, main_node=23
-Creating edge, edge=1307:967 - 966:737
-Number of edges in slope: , slope=1.464 = 2, edges=[(Point(1127, 1110), Point(1214.86, 1238.63), 1.464, slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1214.86, 1238.63)), (Point(1127, 1110), Point(1265, 1312), 1.464, slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312))]
-Found collision point of both edges, eq1=slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312), eq2=slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1214.86, 1238.63), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=26, main_node=13
-Cleaning connection to another node, node_to_remove=13, main_node=26
-Creating edge, edge=1127:1110 - 1265:1312
-Number of edges in slope: , slope=2.507 = 3, edges=[(Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326)), (Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326)), (Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326))]
-Found collision point of both edges, eq1=slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326), eq2=slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=758:960 - 904:1326
-Found collision point of both edges, eq1=slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326), eq2=slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=1, main_node=0
-Cleaning connection to another node, node_to_remove=0, main_node=1
-Creating edge, edge=758:960 - 904:1326
-Number of edges in slope: , slope=-78.0 = 3, edges=[(Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960)), (Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960)), (Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960))]
-Found collision point of both edges, eq1=slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960), eq2=slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=756:1116 - 758:960
-Found collision point of both edges, eq1=slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960), eq2=slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=0, main_node=2
-Cleaning connection to another node, node_to_remove=2, main_node=0
-Creating edge, edge=756:1116 - 758:960
-Number of edges in slope: , slope=1.328 = 1, edges=[(Point(811.23, 531.43), Point(966, 737), 1.328, slope:1.328, const:-545.88, edge1:(710, 397), edge2:(966, 737))]
-Number of edges in slope: , slope=-0.039 = 2, edges=[(Point(904, 1326), Point(1214.86, 1313.88), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1214.86, 1313.88)), (Point(904, 1326), Point(1265, 1312), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312))]
-Found collision point of both edges, eq1=slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312), eq2=slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1214.86, 1313.88), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=25, main_node=1
-Cleaning connection to another node, node_to_remove=1, main_node=25
-Creating edge, edge=904:1326 - 1265:1312
-Number of edges in slope: , slope=-8.214 = 1, edges=[(Point(1265, 1312), Point(1307, 967), -8.214, slope:-8.214, const:11702.71, edge1:(1265, 1312), edge2:(1307, 967))]
-Adding extra edges to edge list
-removing nodes with no neighbors
-Found node with no neighbors - deleting:, real=False, serial=7715afc4-8ab3-4a0d-b54e-b12c33ddaeb9
-Found node with no neighbors - deleting:, real=False, serial=4c906d2f-801e-4747-953f-bfdef6b3b1ad
-Found node with no neighbors - deleting:, real=False, serial=c52e66ca-d9e0-4edf-bc38-ca6e536e3d17
-Found node with no neighbors - deleting:, real=False, serial=452798da-9189-40b5-933f-7090b3d510a4
-Found node with no neighbors - deleting:, real=False, serial=e3fa39f8-affc-410e-aba2-3b083bfc2b23
-Found node with no neighbors - deleting:, real=False, serial=2ae6f029-2557-410c-8c14-d404f7757e52
-Found node with no neighbors - deleting:, real=False, serial=90933864-1d9c-46b9-802a-bb70c0c96763
-removed 7 nodes
-Finished triming data:, num_of_edges=12, num_real_node=8, num_of_node=15
-edge list:, edges=[(Point(811.23, 531.43), Point(966, 737), 1.328, slope:1.328, const:-545.88, edge1:(710, 397), edge2:(966, 737)), (Point(1265, 1312), Point(1307, 967), -8.214, slope:-8.214, const:11702.71, edge1:(1265, 1312), edge2:(1307, 967)), (Point(1127, 1110), Point(1307, 967), -0.794, slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967)), (Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326)), (Point(517, 571), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960)), (Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737)), (Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110)), (Point(966, 737), Point(1307, 967), 0.674, slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967)), (Point(1127, 1110), Point(1265, 1312), 1.464, slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312)), (Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326)), (Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960)), (Point(904, 1326), Point(1265, 1312), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312))]
-Creating edge, edge=756:1116 - 758:960
-Creating edge, edge=756:1116 - 904:1326
-Creating edge, edge=756:1116 - 966:737
-Adding node, real=False, serial=0684fde1-4455-467b-9b16-fc2eb92ae7e0, num=32, location=924.18:681.43
-Creating edge, edge=924.18:681.43 - 966:737
-Creating edge, edge=966:737 - 1307:967
-Creating edge, edge=1265:1312 - 1307:967
-Creating edge, edge=1127:1110 - 1307:967
-Adding node, real=False, serial=0aa8ae3d-7f79-42df-b8a3-853fee7bde9d, num=33, location=669.86:817.72
-Creating edge, edge=669.86:817.72 - 758:960
-Creating edge, edge=904:1326 - 1265:1312
-Creating edge, edge=1127:1110 - 1265:1312
-Creating edge, edge=758:960 - 1127:1110
-Creating edge, edge=758:960 - 904:1326
-Triming data from graph
-Number of slops found = 12
-Number of edges in slope: , slope=-0.794 = 2, edges=[(Point(1127, 1110), Point(1307, 967), -0.794, slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967)), (Point(1127, 1110), Point(1307, 967), -0.794, slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967))]
-Found collision point of both edges, eq1=slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967), eq2=slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=1.419 = 2, edges=[(Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326)), (Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326))]
-Found collision point of both edges, eq1=slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326), eq2=slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=1.614 = 2, edges=[(Point(517, 571), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960)), (Point(669.86, 817.72), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960))]
-Found collision point of both edges, eq1=slope:1.614, const:-263.438, edge1:(669.86, 817.72), edge2:(758, 960), eq2=slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=0, main_node=20
-Cleaning connection to another node, node_to_remove=20, main_node=0
-Creating edge, edge=758:960 - 517:571
-Number of edges in slope: , slope=-1.805 = 2, edges=[(Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737)), (Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737))]
-Found collision point of both edges, eq1=slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737), eq2=slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=0.407 = 2, edges=[(Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110)), (Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110))]
-Found collision point of both edges, eq1=slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110), eq2=slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=0.674 = 2, edges=[(Point(966, 737), Point(1307, 967), 0.674, slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967)), (Point(966, 737), Point(1307, 967), 0.674, slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967))]
-Found collision point of both edges, eq1=slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967), eq2=slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=1.464 = 2, edges=[(Point(1127, 1110), Point(1265, 1312), 1.464, slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312)), (Point(1127, 1110), Point(1265, 1312), 1.464, slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312))]
-Found collision point of both edges, eq1=slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312), eq2=slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=2.507 = 2, edges=[(Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326)), (Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326))]
-Found collision point of both edges, eq1=slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326), eq2=slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=-78.0 = 2, edges=[(Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960)), (Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960))]
-Found collision point of both edges, eq1=slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960), eq2=slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=1.328 = 2, edges=[(Point(811.23, 531.43), Point(966, 737), 1.328, slope:1.328, const:-545.88, edge1:(710, 397), edge2:(966, 737)), (Point(924.18, 681.43), Point(966, 737), 1.328, slope:1.328, const:-545.88, edge1:(710, 397), edge2:(966, 737))]
-Found collision point of both edges, eq1=slope:1.328, const:-545.88, edge1:(924.18, 681.43), edge2:(966, 737), eq2=slope:1.328, const:-545.88, edge1:(811.23, 531.43), edge2:(966, 737), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=966:737 - 811.23:531.43
-Number of edges in slope: , slope=-0.039 = 2, edges=[(Point(904, 1326), Point(1265, 1312), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312)), (Point(904, 1326), Point(1265, 1312), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312))]
-Found collision point of both edges, eq1=slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312), eq2=slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=-8.214 = 2, edges=[(Point(1265, 1312), Point(1307, 967), -8.214, slope:-8.214, const:11702.71, edge1:(1265, 1312), edge2:(1307, 967)), (Point(1265, 1312), Point(1307, 967), -8.214, slope:-8.214, const:11702.71, edge1:(1265, 1312), edge2:(1307, 967))]
-Found collision point of both edges, eq1=slope:-8.214, const:11702.71, edge1:(1265, 1312), edge2:(1307, 967), eq2=slope:-8.214, const:11702.71, edge1:(1265, 1312), edge2:(1307, 967), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=1265:1312 - 1307:967
-Adding extra edges to edge list
-removing nodes with no neighbors
-Found node with no neighbors - deleting:, real=False, serial=0684fde1-4455-467b-9b16-fc2eb92ae7e0
-Found node with no neighbors - deleting:, real=False, serial=0aa8ae3d-7f79-42df-b8a3-853fee7bde9d
-removed 2 nodes
-Finished triming data:, num_of_edges=21, num_real_node=8, num_of_node=15
-edge list:, edges=[(Point(1127, 1110), Point(1307, 967), -0.794, slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967)), (Point(1127, 1110), Point(1307, 967), -0.794, slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967)), (Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326)), (Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326)), (Point(517, 571), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960)), (Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737)), (Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737)), (Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110)), (Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110)), (Point(966, 737), Point(1307, 967), 0.674, slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967)), (Point(966, 737), Point(1307, 967), 0.674, slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967)), (Point(1127, 1110), Point(1265, 1312), 1.464, slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312)), (Point(1127, 1110), Point(1265, 1312), 1.464, slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312)), (Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326)), (Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326)), (Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960)), (Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960)), (Point(811.23, 531.43), Point(966, 737), 1.328, slope:1.328, const:-545.88, edge1:(811.23, 531.43), edge2:(966, 737)), (Point(904, 1326), Point(1265, 1312), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312)), (Point(904, 1326), Point(1265, 1312), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312)), (Point(1265, 1312), Point(1307, 967), -8.214, slope:-8.214, const:11702.71, edge1:(1265, 1312), edge2:(1307, 967))]
-Creating edge, edge=756:1116 - 758:960
-Creating edge, edge=756:1116 - 904:1326
-Creating edge, edge=756:1116 - 966:737
-Adding node, real=False, serial=300db082-d2d1-4ddc-8014-0930608d1af5, num=34, location=811.23:531.43
-Creating edge, edge=811.23:531.43 - 966:737
-Adding node, real=False, serial=6e6a41db-6d57-4654-a894-4e4ac3861a64, num=35, location=1214.86:904.73
-Creating edge, edge=966:737 - 1214.86:904.73
-Adding node, real=False, serial=ebe05754-2431-48ee-bdac-e951849fc0e6, num=36, location=1214.86:1040.24
-Creating edge, edge=1127:1110 - 1214.86:1040.24
-Creating edge, edge=517:571 - 758:960
-Adding node, real=False, serial=a4aa9e3b-8d51-444e-9a5c-8636c043b78b, num=37, location=1214.86:1313.88
-Creating edge, edge=904:1326 - 1214.86:1313.88
-Adding node, real=False, serial=365342fe-e991-4d3f-bcb3-2b70e45dce93, num=38, location=1214.86:1238.63
-Creating edge, edge=1127:1110 - 1214.86:1238.63
-Creating edge, edge=758:960 - 1127:1110
-Creating edge, edge=758:960 - 904:1326
-Triming data from graph
-Number of slops found = 12
-Number of edges in slope: , slope=-0.794 = 3, edges=[(Point(1127, 1110), Point(1307, 967), -0.794, slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967)), (Point(1127, 1110), Point(1307, 967), -0.794, slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967)), (Point(1127, 1110), Point(1214.86, 1040.24), -0.794, slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967))]
-Found collision point of both edges, eq1=slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1214.86, 1040.24), eq2=slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=1127:1110 - 1307:967
-Found collision point of both edges, eq1=slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967), eq2=slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=27, main_node=13
-Cleaning connection to another node, node_to_remove=13, main_node=27
-Creating edge, edge=1127:1110 - 1307:967
-Number of edges in slope: , slope=1.419 = 3, edges=[(Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326)), (Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326)), (Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326))]
-Found collision point of both edges, eq1=slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326), eq2=slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=756:1116 - 904:1326
-Found collision point of both edges, eq1=slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326), eq2=slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=1, main_node=2
-Cleaning connection to another node, node_to_remove=2, main_node=1
-Creating edge, edge=756:1116 - 904:1326
-Number of edges in slope: , slope=1.614 = 2, edges=[(Point(517, 571), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960)), (Point(517, 571), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960))]
-Found collision point of both edges, eq1=slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960), eq2=slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=-1.805 = 3, edges=[(Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737)), (Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737)), (Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737))]
-Found collision point of both edges, eq1=slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737), eq2=slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=756:1116 - 966:737
-Found collision point of both edges, eq1=slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737), eq2=slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=9, main_node=2
-Cleaning connection to another node, node_to_remove=2, main_node=9
-Creating edge, edge=756:1116 - 966:737
-Number of edges in slope: , slope=0.407 = 3, edges=[(Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110)), (Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110)), (Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110))]
-Found collision point of both edges, eq1=slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110), eq2=slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=758:960 - 1127:1110
-Found collision point of both edges, eq1=slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110), eq2=slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=13, main_node=0
-Cleaning connection to another node, node_to_remove=0, main_node=13
-Creating edge, edge=758:960 - 1127:1110
-Number of edges in slope: , slope=0.674 = 3, edges=[(Point(966, 737), Point(1307, 967), 0.674, slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967)), (Point(966, 737), Point(1307, 967), 0.674, slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967)), (Point(966, 737), Point(1214.86, 904.73), 0.674, slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967))]
-Found collision point of both edges, eq1=slope:0.674, const:85.916, edge1:(966, 737), edge2:(1214.86, 904.73), eq2=slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=966:737 - 1307:967
-Found collision point of both edges, eq1=slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967), eq2=slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=27, main_node=9
-Cleaning connection to another node, node_to_remove=9, main_node=27
-Creating edge, edge=966:737 - 1307:967
-Number of edges in slope: , slope=1.464 = 3, edges=[(Point(1127, 1110), Point(1265, 1312), 1.464, slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312)), (Point(1127, 1110), Point(1265, 1312), 1.464, slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312)), (Point(1127, 1110), Point(1214.86, 1238.63), 1.464, slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312))]
-Found collision point of both edges, eq1=slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1214.86, 1238.63), eq2=slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=1127:1110 - 1265:1312
-Found collision point of both edges, eq1=slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312), eq2=slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=28, main_node=13
-Cleaning connection to another node, node_to_remove=13, main_node=28
-Creating edge, edge=1127:1110 - 1265:1312
-Number of edges in slope: , slope=2.507 = 3, edges=[(Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326)), (Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326)), (Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326))]
-Found collision point of both edges, eq1=slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326), eq2=slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=758:960 - 904:1326
-Found collision point of both edges, eq1=slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326), eq2=slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=1, main_node=0
-Cleaning connection to another node, node_to_remove=0, main_node=1
-Creating edge, edge=758:960 - 904:1326
-Number of edges in slope: , slope=-78.0 = 3, edges=[(Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960)), (Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960)), (Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960))]
-Found collision point of both edges, eq1=slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960), eq2=slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=756:1116 - 758:960
-Found collision point of both edges, eq1=slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960), eq2=slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=0, main_node=2
-Cleaning connection to another node, node_to_remove=2, main_node=0
-Creating edge, edge=756:1116 - 758:960
-Number of edges in slope: , slope=1.328 = 2, edges=[(Point(811.23, 531.43), Point(966, 737), 1.328, slope:1.328, const:-545.88, edge1:(811.23, 531.43), edge2:(966, 737)), (Point(811.23, 531.43), Point(966, 737), 1.328, slope:1.328, const:-545.88, edge1:(710, 397), edge2:(966, 737))]
-Found collision point of both edges, eq1=slope:1.328, const:-545.88, edge1:(811.23, 531.43), edge2:(966, 737), eq2=slope:1.328, const:-545.88, edge1:(811.23, 531.43), edge2:(966, 737), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=-0.039 = 3, edges=[(Point(904, 1326), Point(1265, 1312), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312)), (Point(904, 1326), Point(1265, 1312), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312)), (Point(904, 1326), Point(1214.86, 1313.88), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312))]
-Found collision point of both edges, eq1=slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1214.86, 1313.88), eq2=slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=904:1326 - 1265:1312
-Found collision point of both edges, eq1=slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312), eq2=slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=28, main_node=1
-Cleaning connection to another node, node_to_remove=1, main_node=28
-Creating edge, edge=904:1326 - 1265:1312
-Number of edges in slope: , slope=-8.214 = 1, edges=[(Point(1265, 1312), Point(1307, 967), -8.214, slope:-8.214, const:11702.71, edge1:(1265, 1312), edge2:(1307, 967))]
-Adding extra edges to edge list
-removing nodes with no neighbors
-Found node with no neighbors - deleting:, real=False, serial=6e6a41db-6d57-4654-a894-4e4ac3861a64
-Found node with no neighbors - deleting:, real=False, serial=ebe05754-2431-48ee-bdac-e951849fc0e6
-Found node with no neighbors - deleting:, real=False, serial=a4aa9e3b-8d51-444e-9a5c-8636c043b78b
-Found node with no neighbors - deleting:, real=False, serial=365342fe-e991-4d3f-bcb3-2b70e45dce93
-removed 4 nodes
-Finished triming data:, num_of_edges=14, num_real_node=8, num_of_node=16
-edge list:, edges=[(Point(1265, 1312), Point(1307, 967), -8.214, slope:-8.214, const:11702.71, edge1:(1265, 1312), edge2:(1307, 967)), (Point(1127, 1110), Point(1307, 967), -0.794, slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967)), (Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326)), (Point(517, 571), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960)), (Point(517, 571), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960)), (Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737)), (Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110)), (Point(966, 737), Point(1307, 967), 0.674, slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967)), (Point(1127, 1110), Point(1265, 1312), 1.464, slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312)), (Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326)), (Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960)), (Point(811.23, 531.43), Point(966, 737), 1.328, slope:1.328, const:-545.88, edge1:(710, 397), edge2:(966, 737)), (Point(811.23, 531.43), Point(966, 737), 1.328, slope:1.328, const:-545.88, edge1:(811.23, 531.43), edge2:(966, 737)), (Point(904, 1326), Point(1265, 1312), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312))]
-Creating edge, edge=756:1116 - 758:960
-Creating edge, edge=756:1116 - 904:1326
-Creating edge, edge=756:1116 - 966:737
-Adding node, real=False, serial=f5b7f901-ac7f-4b90-aac3-fd6fe51c4c55, num=39, location=811.23:531.43
-Creating edge, edge=811.23:531.43 - 966:737
-Adding node, real=False, serial=56141815-ecd7-4d93-8b57-8166e9d62c3c, num=40, location=1214.86:904.73
-Creating edge, edge=966:737 - 1214.86:904.73
-Adding node, real=False, serial=6a7f4867-7816-4213-b660-3f0c761cfa07, num=41, location=1214.86:1040.24
-Creating edge, edge=1127:1110 - 1214.86:1040.24
-Creating edge, edge=517:571 - 758:960
-Adding node, real=False, serial=51008cbf-c069-471f-ad28-88053b948393, num=42, location=1214.86:1313.88
-Creating edge, edge=904:1326 - 1214.86:1313.88
-Adding node, real=False, serial=a885c3bd-4641-4977-a28f-bc0164342b6a, num=43, location=1214.86:1238.63
-Creating edge, edge=1127:1110 - 1214.86:1238.63
-Creating edge, edge=758:960 - 1127:1110
-Creating edge, edge=758:960 - 904:1326
-Triming data from graph
-Number of slops found = 12
-Number of edges in slope: , slope=-0.794 = 2, edges=[(Point(1127, 1110), Point(1307, 967), -0.794, slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967)), (Point(1127, 1110), Point(1214.86, 1040.24), -0.794, slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967))]
-Found collision point of both edges, eq1=slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1214.86, 1040.24), eq2=slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=27, main_node=13
-Cleaning connection to another node, node_to_remove=13, main_node=27
-Creating edge, edge=1127:1110 - 1307:967
-Number of edges in slope: , slope=1.419 = 2, edges=[(Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326)), (Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326))]
-Found collision point of both edges, eq1=slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326), eq2=slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=1.614 = 3, edges=[(Point(517, 571), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960)), (Point(517, 571), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960)), (Point(517, 571), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960))]
-Found collision point of both edges, eq1=slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960), eq2=slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Creating edge, edge=517:571 - 758:960
-Found collision point of both edges, eq1=slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960), eq2=slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=0, main_node=20
-Cleaning connection to another node, node_to_remove=20, main_node=0
-Creating edge, edge=517:571 - 758:960
-Number of edges in slope: , slope=-1.805 = 2, edges=[(Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737)), (Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737))]
-Found collision point of both edges, eq1=slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737), eq2=slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=0.407 = 2, edges=[(Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110)), (Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110))]
-Found collision point of both edges, eq1=slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110), eq2=slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=0.674 = 2, edges=[(Point(966, 737), Point(1307, 967), 0.674, slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967)), (Point(966, 737), Point(1214.86, 904.73), 0.674, slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967))]
-Found collision point of both edges, eq1=slope:0.674, const:85.916, edge1:(966, 737), edge2:(1214.86, 904.73), eq2=slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=27, main_node=9
-Cleaning connection to another node, node_to_remove=9, main_node=27
-Creating edge, edge=966:737 - 1307:967
-Number of edges in slope: , slope=1.464 = 2, edges=[(Point(1127, 1110), Point(1265, 1312), 1.464, slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312)), (Point(1127, 1110), Point(1214.86, 1238.63), 1.464, slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312))]
-Found collision point of both edges, eq1=slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1214.86, 1238.63), eq2=slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=28, main_node=13
-Cleaning connection to another node, node_to_remove=13, main_node=28
-Creating edge, edge=1127:1110 - 1265:1312
-Number of edges in slope: , slope=2.507 = 2, edges=[(Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326)), (Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326))]
-Found collision point of both edges, eq1=slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326), eq2=slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=-78.0 = 2, edges=[(Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960)), (Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960))]
-Found collision point of both edges, eq1=slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960), eq2=slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=1.328 = 3, edges=[(Point(811.23, 531.43), Point(966, 737), 1.328, slope:1.328, const:-545.88, edge1:(710, 397), edge2:(966, 737)), (Point(811.23, 531.43), Point(966, 737), 1.328, slope:1.328, const:-545.88, edge1:(811.23, 531.43), edge2:(966, 737)), (Point(811.23, 531.43), Point(966, 737), 1.328, slope:1.328, const:-545.88, edge1:(710, 397), edge2:(966, 737))]
-Found collision point of both edges, eq1=slope:1.328, const:-545.88, edge1:(811.23, 531.43), edge2:(966, 737), eq2=slope:1.328, const:-545.88, edge1:(811.23, 531.43), edge2:(966, 737), point=always
-Lines have the same parameters but we are not sure if they meet
-Found collision point of both edges, eq1=slope:1.328, const:-545.88, edge1:(811.23, 531.43), edge2:(966, 737), eq2=slope:1.328, const:-545.88, edge1:(811.23, 531.43), edge2:(966, 737), point=always
-Lines have the same parameters but we are not sure if they meet
-Found collision point of both edges, eq1=slope:1.328, const:-545.88, edge1:(811.23, 531.43), edge2:(966, 737), eq2=slope:1.328, const:-545.88, edge1:(811.23, 531.43), edge2:(966, 737), point=always
-Lines have the same parameters but we are not sure if they meet
-Number of edges in slope: , slope=-0.039 = 2, edges=[(Point(904, 1326), Point(1265, 1312), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312)), (Point(904, 1326), Point(1214.86, 1313.88), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312))]
-Found collision point of both edges, eq1=slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1214.86, 1313.88), eq2=slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312), point=always
-Lines meet and intersect with each other - They are the same line
-two edges are one
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=28, main_node=1
-Cleaning connection to another node, node_to_remove=1, main_node=28
-Creating edge, edge=904:1326 - 1265:1312
-Number of edges in slope: , slope=-8.214 = 1, edges=[(Point(1265, 1312), Point(1307, 967), -8.214, slope:-8.214, const:11702.71, edge1:(1265, 1312), edge2:(1307, 967))]
-Adding extra edges to edge list
-removing nodes with no neighbors
-Found node with no neighbors - deleting:, real=False, serial=56141815-ecd7-4d93-8b57-8166e9d62c3c
-Found node with no neighbors - deleting:, real=False, serial=6a7f4867-7816-4213-b660-3f0c761cfa07
-Found node with no neighbors - deleting:, real=False, serial=51008cbf-c069-471f-ad28-88053b948393
-Found node with no neighbors - deleting:, real=False, serial=a885c3bd-4641-4977-a28f-bc0164342b6a
-removed 4 nodes
-Finished triming data:, num_of_edges=19, num_real_node=8, num_of_node=17
-edge list:, edges=[(Point(1265, 1312), Point(1307, 967), -8.214, slope:-8.214, const:11702.71, edge1:(1265, 1312), edge2:(1307, 967)), (Point(1127, 1110), Point(1307, 967), -0.794, slope:-0.794, const:2004.838, edge1:(1127, 1110), edge2:(1307, 967)), (Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326)), (Point(756, 1116), Point(904, 1326), 1.419, slope:1.419, const:43.236, edge1:(756, 1116), edge2:(904, 1326)), (Point(517, 571), Point(758, 960), 1.614, slope:1.614, const:-263.438, edge1:(517, 571), edge2:(758, 960)), (Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737)), (Point(756, 1116), Point(966, 737), -1.805, slope:-1.805, const:2480.58, edge1:(756, 1116), edge2:(966, 737)), (Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110)), (Point(758, 960), Point(1127, 1110), 0.407, slope:0.407, const:651.494, edge1:(758, 960), edge2:(1127, 1110)), (Point(966, 737), Point(1307, 967), 0.674, slope:0.674, const:85.916, edge1:(966, 737), edge2:(1307, 967)), (Point(1127, 1110), Point(1265, 1312), 1.464, slope:1.464, const:-539.928, edge1:(1127, 1110), edge2:(1265, 1312)), (Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326)), (Point(758, 960), Point(904, 1326), 2.507, slope:2.507, const:-940.306, edge1:(758, 960), edge2:(904, 1326)), (Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960)), (Point(756, 1116), Point(758, 960), -78.0, slope:-78.0, const:60084.0, edge1:(756, 1116), edge2:(758, 960)), (Point(811.23, 531.43), Point(966, 737), 1.328, slope:1.328, const:-545.88, edge1:(710, 397), edge2:(966, 737)), (Point(811.23, 531.43), Point(966, 737), 1.328, slope:1.328, const:-545.88, edge1:(811.23, 531.43), edge2:(966, 737)), (Point(811.23, 531.43), Point(966, 737), 1.328, slope:1.328, const:-545.88, edge1:(710, 397), edge2:(966, 737)), (Point(904, 1326), Point(1265, 1312), -0.039, slope:-0.039, const:1361.256, edge1:(904, 1326), edge2:(1265, 1312))]
-, action=press, comment=, obj=Graph game_graph_0 - Button - [1, 4, 2, 3, 2, 3]
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=9, main_node=22
-Cleaning connection to another node, node_to_remove=22, main_node=9
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=None, main_node=None
-Cleaning connection to another node, node_to_remove=8, main_node=0
-Cleaning connection to another node, node_to_remove=7, main_node=1
-Cleaning connection to another node, node_to_remove=5, main_node=2
-Cleaning connection to another node, node_to_remove=14, main_node=9
-Cleaning connection to another node, node_to_remove=15, main_node=13
-Cleaning connection to another node, node_to_remove=18, main_node=13
-Finished cleaning graph before continuing:, num_of_connections=11, num_of_nodes=17, num_real_nodes=8
-, action=data, comment=end game, obj=game_graph_0
-, action=data, comment=start,, obj=game_questionnaire_0
