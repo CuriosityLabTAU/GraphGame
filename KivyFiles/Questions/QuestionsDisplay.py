@@ -1,5 +1,12 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+try:
+    f = open('/sdcard/graphgamemain/main_5.txt', 'w')
+except:
+    f = open('main.txt', 'w')
+f.write('1\n')
+f.close()
+
 from kivy.uix.button import Button
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.label import Label
@@ -50,7 +57,7 @@ class QuestionnaireWidget(GridLayout):
         store = JsonStore("Json/questions.json", encoding='utf-8')
         self.submit_button = LoggedButton(text=store['questionnaire']['next_button'][::-1],
                                           font_name="fonts/Alef-Regular.ttf", halign='right')
-        print (store['questionnaire']['next_button'][::-1])
+        # print (store['questionnaire']['next_button'][::-1]) # DEBUG
         self.submit_button.name = 'questionnaire submit'
         self.submit_button.bind(on_press=self.submit_action)
         self.add_widget(self.submit_button)

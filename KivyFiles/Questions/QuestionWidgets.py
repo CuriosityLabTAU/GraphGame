@@ -1,5 +1,12 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+try:
+    f = open('/sdcard/graphgamemain/main_3.txt', 'w')
+except:
+    f = open('main.txt', 'w')
+f.write('1\n')
+f.close()
+
 import re
 
 from kivy.uix.behaviors import ToggleButtonBehavior
@@ -94,7 +101,7 @@ class BooleanQuestion(GridLayout):
         for child in self.children:
             if type(child) == UntoggbleToggle:
                 if child.state == 'down':
-                    print (child.text)
+                    # print (child.text) # DEBUG
                     return [child.text == "ןכ"]
         return None
 

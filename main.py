@@ -1,34 +1,125 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-f = open('main.txt', 'w')
+try:
+    f = open('/sdcard/graphgamemain/main_1.txt', 'w')
+except:
+    f = open('main.txt', 'w')
 f.write('1\n')
+f.close()
+
+try:
+    f = open('/sdcard/graphgamemain/main_2_0.txt', 'w')
+except:
+    f = open('main.txt', 'w')
 from os import path, getcwd, listdir
 f.write('2\n')
+f.close()
+
+try:
+    f = open('/sdcard/graphgamemain/main_2_1.txt', 'w')
+except:
+    f = open('main.txt', 'w')
 from random import shuffle
 f.write('3\n')
+f.close()
+
+try:
+    f = open('/sdcard/graphgamemain/main_2_2.txt', 'w')
+except:
+    f = open('main.txt', 'w')
 from kivy.app import App
 f.write('4\n')
+f.close()
+
+try:
+    f = open('/sdcard/graphgamemain/main_2_3.txt', 'w')
+except:
+    f = open('main.txt', 'w')
 from kivy.uix.screenmanager import ScreenManager
 f.write('5\n')
+f.close()
+
+try:
+    f = open('/sdcard/graphgamemain/main_2_4.txt', 'w')
+except:
+    f = open('main.txt', 'w')
 from LoginScreen import LoginScreen
 f.write('6\n')
+f.close()
+
+try:
+    f = open('/sdcard/graphgamemain/main_2_5.txt', 'w')
+except:
+    f = open('main.txt', 'w')
 from QuestionnaireScreen import QuestionnaireScreen
 f.write('7\n')
+f.close()
+
+try:
+    f = open('/sdcard/graphgamemain/main_2_6.txt', 'w')
+except:
+    f = open('main.txt', 'w')
 from ResultsScreen import ResultScreen
 f.write('8\n')
+f.close()
+
+try:
+    f = open('/sdcard/graphgamemain/main_2_7.txt', 'w')
+except:
+    f = open('main.txt', 'w')
 from GraphGameScreen import GraphGameScreen
 f.write('9\n')
+f.close()
+
+try:
+    f = open('/sdcard/graphgamemain/main_2_8.txt', 'w')
+except:
+    f = open('main.txt', 'w')
 from SupplementaryFiles.GraphSaveLoad import load_graph_from_json, save_graph_json
 f.write('10\n')
+f.close()
+
+try:
+    f = open('/sdcard/graphgamemain/main_2_9.txt', 'w')
+except:
+    f = open('main.txt', 'w')
 from SupplementaryFiles.Utils import Utils
 f.write('11\n')
+f.close()
+
+try:
+    f = open('/sdcard/graphgamemain/main_2_10.txt', 'w')
+except:
+    f = open('main.txt', 'w')
 from KivyFiles.Questions.QuestionObject import QuestionObject
 f.write('12\n')
+f.close()
+
+try:
+    f = open('/sdcard/graphgamemain/main_2_11.txt', 'w')
+except:
+    f = open('main.txt', 'w')
 from SupplementaryFiles.GLogger import *
 f.write('13\n')
+f.close()
+
+try:
+    f = open('/sdcard/graphgamemain/main_2_12.txt', 'w')
+except:
+    f = open('main.txt', 'w')
 from KivyCommunication import *
 f.write('14\n')
+f.close()
+
+try:
+    f = open('/sdcard/graphgamemain/main_2_13.txt', 'w')
+except:
+    f = open('main.txt', 'w')
 from SupplementaryFiles.Enums import Colours, QuestionTypes
+f.write('14\n')
+f.close()
+
+
 CONFIG_FILE_PATH = "game_config.txt"
 GRAPH_CONFIG_PATH = "graph_config.txt"
 GET_RANDOM_QUESTIONS = 1
@@ -49,7 +140,7 @@ class GraphGameMainApp(App):
     logger = None
 
     def build(self):
-        KL.start([DataMode.file], self.user_data_dir) #"/sdcard/curiosity/")  #
+        self.init_communication()
 
         self.config = Utils.read_game_config_file(CONFIG_FILE_PATH)
         Utils.read_graph_config_file(GRAPH_CONFIG_PATH)
@@ -105,6 +196,10 @@ class GraphGameMainApp(App):
 
         self.sm.current = 'LoginScreen'
         return self.sm
+
+    def init_communication(self):
+        KC.start(the_ip='192.168.1.254', the_parents=[self])  # 127.0.0.1
+        KL.start(mode=[DataMode.file], pathname=self.user_data_dir)
 
     @staticmethod
     def on_connection():
