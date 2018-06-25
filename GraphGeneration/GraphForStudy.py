@@ -12,10 +12,10 @@ Utils.read_graph_config_file('../graph_config.txt')
 Utils.read_game_config_file('../game_config.txt')
 config = Utils.graph_config_data
 
-n_nodes = 10
+n_nodes = 11
 min_neighbors = 1
 max_neighbors = 4
-buttons = np.array([1,3,4,2,3,4])
+buttons = np.array([1,2,4,3,4,2])
 n_tries = 100
 
 x_min = int(config["NodeData"]["NodeSize"])
@@ -80,7 +80,7 @@ while len(candidate_graphs) < 15:
             print('found solvable graph')
             # check if others is also answer
             # first check if subgroup is also a solution
-            answer_1, number_of_nodes_seen_1 = run_buttons_on_graph(graph, buttons[:-2])
+            answer_1, number_of_nodes_seen_1 = run_buttons_on_graph(graph, buttons[:-1])
             if not answer_1:
                 # second check if others can give a solution
                 no_other_answer = True
@@ -101,7 +101,7 @@ while len(candidate_graphs) < 15:
                     print('found good graph!!!')
                     candidate_graphs.append((graph))
                     i_graph = len(candidate_graphs)
-                    save_graph_json(graph, "Graph_study_%d.json" % i_graph)
+                    save_graph_json(graph, "Graph_study_n11_%d.json" % i_graph)
                     plt.clf()
                     plot_graph(graph, show=False)
                     plt.savefig("Graph_study_%d.png" % i_graph)

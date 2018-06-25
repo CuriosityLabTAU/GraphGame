@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import logging
 
+
 class GLogger ():
     logger = None
     log_output_type = ""
@@ -38,16 +39,19 @@ class GLogger ():
 
     @staticmethod
     def log(log_level, msg , **kwargs):
-        if log_level < log_level:
-            return
-        elif isinstance(GLogger.logger, server_logger):
-            if not kwargs:
-                GLogger.logger.log_write(action=LogAction.none, obj='', comment=msg)
+        try:
+            if log_level < log_level:
+                return
+            elif isinstance(GLogger.logger, server_logger):
+                if not kwargs:
+                    GLogger.logger.log_write(action=LogAction.none, obj='', comment=msg)
+                else:
+                    GLogger.logger.log_write(**kwargs)
             else:
-                GLogger.logger.log_write(**kwargs)
-        else:
-            msg = GLogger.format_log_msg(msg, **kwargs)
-            GLogger.logger.log_write(msg)
+                msg = GLogger.format_log_msg(msg, **kwargs)
+                GLogger.logger.log_write(msg)
+        except:
+            pass #print('Error in GLogger.log!!!')
 
 
 # Enum: LogAction: non, press, play, stop, move, down, up, text, spinner, data

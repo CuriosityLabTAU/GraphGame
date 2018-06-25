@@ -28,7 +28,8 @@ class IntSpinner(Spinner):
 
 class UntoggbleToggle(ToggleButtonBehavior, LoggedButton):
     def __init__(self, **kwargs):
-        super(UntoggbleToggle, self).__init__(allow_no_selection=False, **kwargs)
+        # super(UntoggbleToggle, self).__init__(allow_no_selection=False, **kwargs)
+        super(UntoggbleToggle, self).__init__(allow_no_selection=True, **kwargs)
 
 
 class MultipleAnswersObj(GridLayout):

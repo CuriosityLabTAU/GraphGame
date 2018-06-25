@@ -85,8 +85,8 @@ class GraphGameMainApp(App):
                                        button_presses=self.button_presses)
             self.game_screen[-1].add_widget(self.game_screen[-1].graph_game.layout)
             # Step 2 - Questionnaire
-            #Goren - run nine graphs with question and then one without
-            if i_net <9:
+            #Goren - run seven graphs with question and then one without
+            if i_net < 7:
                 self.game_screen.append(QuestionnaireScreen(name='game_questionnaire_' + str(i_net)))
                 self.game_screen[-1].setup(number=i_net,
                                            main_app=self,

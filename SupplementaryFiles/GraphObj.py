@@ -24,7 +24,7 @@ class GraphObject:
                  extra_distance=None):
         if config_file:
             self.config = Utils.graph_config_data
-            print (self.config)
+            # print (self.config)
             self.size = {"max_x": int(self.config['GeneralParams']['GraphSizeX']),
                          "max_y": int(self.config['GeneralParams']['GraphSizeY'])}
             self.node_count = int(self.config["GeneralParams"]["NodeCount"])
