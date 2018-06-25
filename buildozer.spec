@@ -7,28 +7,25 @@ title = GraphGame
 package.name = GraphGame
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.test
+package.domain = com.gorengordon.curiosity
 
 # (str) Source code where the main.py live
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,kv,atlas,txt,json,wav
-
-# (list) List of inclusions using pattern matching
-#source.include_patterns = assets/*,images/*.png
+source.include_exts = py,png,jpg,kv,atlas,json,m4a,gif,txt,ttf,wav
 
 # (list) Source files to exclude (let empty to not exclude anything)
 #source.exclude_exts = spec
 
 # (list) List of directory to exclude (let empty to not exclude anything)
-#source.exclude_dirs = tests, bin
+source.exclude_dirs = bin,QLearning,GraphGeneration,anxiety_inventory,Testing,TesterGraphsData
 
 # (list) List of exclusions using pattern matching
 #source.exclude_patterns = license,images/*/*.jpg
 
 # (str) Application versioning (method 1)
-version = 0.1
+version = 2.0
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
@@ -36,7 +33,8 @@ version = 0.1
 
 # (list) Application requirements
 # comma seperated e.g. requirements = sqlite3,kivy
-requirements = hostpython2,kivy,twisted
+#requirements = hostpython2,kivy,twisted
+requirements = hostpython2,kivy,pycrypto,numpy,plyer,android,incremental==16.10.0, twisted==15.4.0
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -54,41 +52,27 @@ requirements = hostpython2,kivy,twisted
 # (str) Supported orientation (one of landscape, portrait or all)
 orientation = landscape
 
-# (list) List of service to declare
-#services = NAME:ENTRYPOINT_TO_PY,NAME2:ENTRYPOINT2_TO_PY
-
 #
 # OSX Specific
 #
+osx.python_version = 2
+osx.kivy_version = 1.9.1
 
 #
 # author = © Copyright Info
-
-# change the major version of python used by the app
-osx.python_version = 2
-
-# Kivy version to use
-osx.kivy_version = 1.9.1
 
 #
 # Android specific
 #
 
 # (bool) Indicate if the application should be fullscreen or not
-fullscreen = 0
-
-# (string) Presplash background color (for new android toolchain)
-# Supported formats are: #RRGGBB #AARRGGBB or one of the following names:
-# red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray,
-# darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy,
-# olive, purple, silver, teal.
-#android.presplash_color = #FFFFFF
+fullscreen = 1
 
 # (list) Permissions
-# android.permissions = INTERNET,ACCESS_WIFI_STATE,CHANGE_WIFI_STATE,CHANGE_NETWORK_STATE,ACCESS_NETWORK_STATE,CAMERA,READ_EXTERNAL_STORAGE,WRITE_EXTERNAL_STORAGE
+android.permissions = INTERNET,ACCESS_WIFI_STATE,CHANGE_WIFI_STATE,CHANGE_NETWORK_STATE,ACCESS_NETWORK_STATE,CAMERA,READ_EXTERNAL_STORAGE,WRITE_EXTERNAL_STORAGE
 
 # (int) Android API to use
-#android.api = 19
+# android.api = 14
 
 # (int) Minimum API required
 #android.minapi = 9
@@ -111,22 +95,15 @@ fullscreen = 0
 # (str) ANT directory (if empty, it will be automatically downloaded.)
 #android.ant_path =
 
-# (bool) If True, then skip trying to update the Android sdk
-# This can be useful to avoid excess Internet downloads or save time
-# when an update is due and you just want to test/build your package
-# android.skip_update = False
+# (str) python-for-android git clone directory (if empty, it will be automatically cloned from github)
+#p4a.source_dir = /home/prg/projects/python-for-android
+p4a.source_dir = /home/python-for-android
+
+# (list) python-for-android whitelist
+#android.p4a_whitelist =
 
 # (str) Android entry point, default is ok for Kivy-based app
 #android.entrypoint = org.renpy.android.PythonActivity
-
-# (list) Pattern to whitelist for the whole project
-#android.whitelist =
-
-# (str) Path to a custom whitelist file
-#android.whitelist_src =
-
-# (str) Path to a custom blacklist file
-#android.blacklist_src =
 
 # (list) List of Java .jar files to add to the libs so that pyjnius can access
 # their classes. Don't add jars that you do not need, since extra jars can slow
@@ -138,16 +115,9 @@ fullscreen = 0
 # directory containing the files)
 #android.add_src =
 
-# (list) Android AAR archives to add (currently works only with sdl2_gradle
-# bootstrap)
-#android.add_aars =
-
-# (list) Gradle dependencies to add (currently works only with sdl2_gradle
-# bootstrap)
-#android.gradle_dependencies =
-
-# (str) python-for-android branch to use, defaults to master
-#p4a.branch = stable
+# (str) python-for-android branch to use, if not master, useful to try
+# not yet merged features.
+#android.branch = master
 
 # (str) OUYA Console category. Should be one of GAME or APP
 # If you leave this blank, OUYA support will not be enabled
@@ -167,7 +137,7 @@ fullscreen = 0
 
 # (bool) Indicate whether the screen should stay on
 # Don't forget to add the WAKE_LOCK permission if you set this to True
-#android.wakelock = False
+#android.wakelock = True
 
 # (list) Android application meta-data to set (key=value format)
 #android.meta_data =
@@ -176,38 +146,9 @@ fullscreen = 0
 # project.properties automatically.)
 #android.library_references =
 
-# (str) Android logcat filters to use
-#android.logcat_filters = *:S python:D
-
-# (bool) Copy library instead of making a libpymodules.so
-#android.copy_libs = 1
-
-# (str) The Android arch to build for, choices: armeabi-v7a, arm64-v8a, x86
-android.arch = armeabi-v7a
-
-#
-# Python for android (p4a) specific
-#
-
-# (str) python-for-android git clone directory (if empty, it will be automatically cloned from github)
-#p4a.source_dir =
-
-# (str) The directory in which python-for-android should look for your own build recipes (if any)
-#p4a.local_recipes =
-
-# (str) Filename to the hook for p4a
-#p4a.hook =
-
-# (str) Bootstrap to use for android builds
-# p4a.bootstrap = sdl2
-
-
 #
 # iOS specific
 #
-
-# (str) Path to a custom kivy-ios folder
-#ios.kivy_ios_dir = ../kivy-ios
 
 # (str) Name of the certificate to use for signing the debug version
 # Get a list of available identities: buildozer ios list_identities
@@ -225,11 +166,6 @@ log_level = 2
 # (int) Display warning if buildozer is run as root (0 = False, 1 = True)
 warn_on_root = 1
 
-# (str) Path to build artifact storage, absolute or relative to spec file
-# build_dir = ./.buildozer
-
-# (str) Path to build output (i.e. .apk, .ipa) storage
-#bin_dir = ./bin
 
 #    -----------------------------------------------------------------------------
 #    List as sections

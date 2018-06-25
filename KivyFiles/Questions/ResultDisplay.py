@@ -1,5 +1,12 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+try:
+    f = open('/sdcard/graphgamemain/main_6.txt', 'w')
+except:
+    f = open('main.txt', 'w')
+f.write('1\n')
+f.close()
+
 import kivy
 from kivy.uix.button import Button
 from kivy.uix.gridlayout import GridLayout
@@ -184,7 +191,7 @@ class ResultWidget(GridLayout):
         user_graph_answer_percentage = 0 #number of questions in each graph
         possible_answers = ['red', 'yellow', 'blue']
         for answer in answer_list:
-            print ("user_answer {0},user_graph_answer {1},real_answer {2} ".format(answer.user_answer,answer.user_graph_answer,answer.real_answer))
+            # print ("user_answer {0},user_graph_answer {1},real_answer {2} ".format(answer.user_answer,answer.user_graph_answer,answer.real_answer)) # DEBUG
             #Goren - the new grade calculation
             if answer.question_id == 1:
                 if answer.user_graph_answer == answer.real_answer:
@@ -205,8 +212,8 @@ class ResultWidget(GridLayout):
                     if ans not in answer.user_answer and ans not in answer.user_graph_answer:
                         user_answers_percentage = user_answers_percentage + 1
 
-        print(user_answers_percentage)
-        print (user_graph_answer_percentage)
+        # print(user_answers_percentage)
+        # print (user_graph_answer_percentage)
         num_of_questions = len(answer_list)
         num_of_questions = num_of_questions if num_of_questions != 0 else 1
         user_possible_success = round(user_answers_percentage * 100 / (float(num_of_questions)*3), 2)

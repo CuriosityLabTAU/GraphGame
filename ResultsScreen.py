@@ -1,5 +1,12 @@
 #!/usr/bin/kivy
 # -*- coding: utf-8 -*-
+try:
+    f = open('/sdcard/graphgamemain/main_4.txt', 'w')
+except:
+    f = open('main.txt', 'w')
+f.write('1\n')
+f.close()
+
 from kivy.uix.screenmanager import Screen
 from KivyFiles.Questions.ResultDisplay import ResultDisplay
 from SupplementaryFiles.GLogger import *
@@ -67,7 +74,7 @@ class ResultScreen(Screen):
             self.play_explanation()
 
     def play_explanation(self, *args):
-        print(args)
+        # print(args) # DEBUG
         try:
             self.explanations[self.current_explanation].play()
             self.current_explanation += 1
