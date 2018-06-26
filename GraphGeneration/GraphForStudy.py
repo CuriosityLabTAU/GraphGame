@@ -12,16 +12,31 @@ Utils.read_graph_config_file('../graph_config.txt')
 Utils.read_game_config_file('../game_config.txt')
 config = Utils.graph_config_data
 
-n_nodes = 11
+n_nodes = 10
 min_neighbors = 1
 max_neighbors = 4
 buttons = np.array([1,2,4,3,4,2])
 n_tries = 100
 
 x_min = int(config["NodeData"]["NodeSize"])
-x_max = 1500 # int(config["GeneralParams"]["GraphSizeX"]) - int(config["NodeData"]["NodeSize"])
+x_max = 3500 # int(config["GeneralParams"]["GraphSizeX"]) - int(config["NodeData"]["NodeSize"])
 y_min = int(config["NodeData"]["NodeSize"])
-y_max = 1500 # int(config["GeneralParams"]["GraphSizeY"]) - int(config["NodeData"]["NodeSize"])
+y_max = 3500 # int(config["GeneralParams"]["GraphSizeY"]) - int(config["NodeData"]["NodeSize"])
+
+
+screen_types = {
+    'tiny': {"min_x": 0, "min_y": 0,
+              "max_x": 800,
+              "max_y": 600},
+    'small': {"min_x": 0, "min_y": 0,
+              "max_x": 1200,
+              "max_y": 800},
+    'large': {"min_x": 0, "min_y": 0,
+              "max_x": 1920,
+              "max_y": 1200}
+}
+
+the_type = 'large'
 
 
 def graph_spring_layout(graph_):
@@ -70,7 +85,7 @@ while len(candidate_graphs) < 15:
 
     possible_graph = True
     try:
-        answer, number_of_nodes_seen = run_buttons_on_graph(graph, buttons)
+        answer, number_of_nodes_seen = run_buttons_on_graph(graph, buttons, screen_types[the_type])
         print(number_of_nodes_seen)
     except:
         possible_graph = False
@@ -80,7 +95,7 @@ while len(candidate_graphs) < 15:
             print('found solvable graph')
             # check if others is also answer
             # first check if subgroup is also a solution
-            answer_1, number_of_nodes_seen_1 = run_buttons_on_graph(graph, buttons[:-1])
+            answer_1, number_of_nodes_seen_1 = run_buttons_on_graph(graph, buttons[:-1], screen_types[the_type])
             if not answer_1:
                 # second check if others can give a solution
                 no_other_answer = True
@@ -88,7 +103,7 @@ while len(candidate_graphs) < 15:
                     try_buttons = np.random.choice(4,len(buttons),replace=True) + 1
                     if sum(np.power(try_buttons - buttons, 2.0)) > 0.0 :
                         try:
-                            answer_2, number_of_nodes_seen_2 = run_buttons_on_graph(graph, try_buttons)
+                            answer_2, number_of_nodes_seen_2 = run_buttons_on_graph(graph, try_buttons, screen_types[the_type])
                             if answer_2:
                                 no_other_answer = False
                                 print('other solve it :(')
@@ -101,7 +116,7 @@ while len(candidate_graphs) < 15:
                     print('found good graph!!!')
                     candidate_graphs.append((graph))
                     i_graph = len(candidate_graphs)
-                    save_graph_json(graph, "Graph_study_n11_%d.json" % i_graph)
+                    save_graph_json(graph, "Graph_study_%s_%d.json" % (the_type, i_graph))
                     plt.clf()
                     plot_graph(graph, show=False)
                     plt.savefig("Graph_study_%d.png" % i_graph)

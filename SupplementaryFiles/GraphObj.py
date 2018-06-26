@@ -19,6 +19,7 @@ class GraphObject:
     inner_node_count = 0
     question_object_list = []
     center_node = ''
+    source_file = ''
 
     def __init__(self, config_file=None, max_x=None, max_y=None, node_count=None, max_neighbors=None,
                  extra_distance=None):

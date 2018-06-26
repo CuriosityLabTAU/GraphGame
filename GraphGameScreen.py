@@ -61,6 +61,8 @@ class GraphGameScreen(Screen):
         log_str = 'start,'
         log_str += 'turns=' + str(self.graph_game.max_turns) + ','
         GLogger.log(logging.INFO,"", action=LogAction.data, obj='game_graph_' + str(self.game_number), comment=log_str)
+        KL.log.insert(LogAction.data, obj='GameScreen', comment=['enter', 'game_graph_' + str(self.game_number),
+                                                                 self.graph.source_file], sync=True)
         self.main_app.current_graph = self.graph
         self.button_presses = []
 

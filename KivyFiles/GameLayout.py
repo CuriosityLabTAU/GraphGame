@@ -11,18 +11,23 @@ from kivy.uix.floatlayout import FloatLayout
 from SupplementaryFiles.RepeatedTimer import RepeatedTimer
 from kivy.uix.image import Image
 from os import path
+from copy import copy
 
 
 class GameLayout(FloatLayout):
     next_func = None
     rt = None
 
-    def __init__(self, tablet_game=None, zoom_rate=0.7, edge_size=2, **kwargs):
+    def __init__(self, tablet_game=None, zoom_rate=0.7, edge_size=2, dim_=None, **kwargs):
         super(GameLayout, self).__init__(rows=1, cols=2, **kwargs)
         self.tablet_game = tablet_game
         self.move_counter = 0
-        self.dim = {"min_x": 0, "min_y": 0, "max_x": kivy.core.window.Window.size[0],
-                    "max_y": kivy.core.window.Window.size[1]}
+        if dim_ == None:
+            self.dim = {"min_x": 0, "min_y": 0,
+                        "max_x": kivy.core.window.Window.size[0],
+                        "max_y": kivy.core.window.Window.size[1]}
+        else:
+            self.dim = copy(dim_)
         self.button_width = self.dim["max_x"] * self.tablet_game.game_screen.button_ratio
         self.buttons = []
         self.original_graph = self.tablet_game.original_graph

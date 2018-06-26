@@ -53,6 +53,7 @@ def load_graph_from_json(file_name):
         raise IOError("File not found", path=file_name)
 
     new_graph = GraphObject()
+    new_graph.source_file = file_name
     with open(file_name) as f:
         data = json.loads(f.read())
         new_graph.size["max_x"] = data["size"]["max_x"]

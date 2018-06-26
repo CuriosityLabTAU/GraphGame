@@ -76,11 +76,11 @@ class DummyScreen:
         print ("end game \n")
 
 
-def run_buttons_on_graph(graph, buttons):
+def run_buttons_on_graph(graph, buttons, dim_=None):
     #log = logging.getLogger()
     #log.setLevel(Utils.game_config_data['Default']['log_level'])
     dummy_screen = DummyScreen(graph)
-    game = GraphTabletDisplay(dummy_screen)
+    game = GraphTabletDisplay(dummy_screen, dim_=dim_)
     #game.run()
     data_handler = GameDataHandler(GRAPH_CONFIG_FILE, graph.size)
     data_handler.add_view_to_db(game.get_info_from_screen())

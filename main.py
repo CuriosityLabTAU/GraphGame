@@ -94,13 +94,13 @@ class GraphGameMainApp(App):
                                            main_app=self,
                                            real_user=self.real_user)
                 self.game_screen[-1].add_widget(self.game_screen[-1].questionnaire.the_widget)
+
                 # Step 3 - Results
                 self.game_screen.append(ResultScreen(name='game_results_' + str(i_net)))
                 self.game_screen[-1].setup(number=i_net,
                                            main_app=self,
                                            real_user=True)
                 self.game_screen[-1].add_widget(self.game_screen[-1].result_app.the_widget)
-        Logger.debug("7")
 
         for gs in self.game_screen:
             self.sm.add_widget(gs)
@@ -125,7 +125,12 @@ class GraphGameMainApp(App):
         graph_folder = path.join(getcwd(), self.config['Default']['graphs_folder'])
         #for testing
         #graph_folder = path.join(getcwd(), self.config['Default']['tester_graphs_folder'])
-        file_list = [item for item in listdir(graph_folder) if item.endswith(".json")]
+        if self.sm.size[1] < 1000:
+            screen_type = 'small'
+        else:
+            screen_type = 'large'
+        file_list = [item for item in listdir(graph_folder) if item.endswith(".json") and screen_type in item]
+        KL.log.insert(action=LogAction.data, obj='screen_type', comment=screen_type, sync=True)
         for graph_name in file_list:
             try:
                 graph_file_path = path.join(".", graph_folder, str(graph_name))
