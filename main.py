@@ -21,6 +21,9 @@ CONFIG_FILE_PATH = "game_config.txt"
 GRAPH_CONFIG_PATH = "graph_config.txt"
 GET_RANDOM_QUESTIONS = 1
 
+number_of_graphs = 0
+
+
 class ZeroScreen(Screen):
 
     def on_enter(self, *args):
@@ -88,7 +91,7 @@ class GraphGameMainApp(App):
             self.game_screen[-1].add_widget(self.game_screen[-1].graph_game.layout)
             # Step 2 - Questionnaire
             #Goren - run nine graphs with question and then one without
-            if i_net <9:
+            if i_net < number_of_graphs:
                 self.game_screen.append(QuestionnaireScreen(name='game_questionnaire_' + str(i_net)))
                 self.game_screen[-1].setup(number=i_net,
                                            main_app=self,
@@ -180,6 +183,10 @@ class GraphGameMainApp(App):
 
         current_graph.question_object_list = all_questions_graph
         save_graph_json(current_graph, graph_file_path)
+
+    def on_stop(self, *args):
+        KL.log.insert(action=LogAction.data, comment='end game')
+
 
 if __name__ == '__main__':
     GraphGameMainApp().run()

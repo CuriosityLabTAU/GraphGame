@@ -121,5 +121,4 @@ class GraphGameScreen(Screen):
     def end_subject(self):
         #Goren
         #added exiting here, the shutting down is problematic - should we do something like exit(1)?
-        KL.log.insert(action=LogAction.data, comment='end game')
         self.main_app.stop()
