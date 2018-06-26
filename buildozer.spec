@@ -1,7 +1,7 @@
 [app]
 
 # (str) Title of your application
-title = GraphGame
+title = Game 5
 
 # (str) Package name
 package.name = GraphGame

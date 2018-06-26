@@ -1,130 +1,34 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-try:
-    f = open('/sdcard/graphgamemain/main_1.txt', 'w')
-except:
-    f = open('main.txt', 'w')
-f.write('1\n')
-f.close()
-
-try:
-    f = open('/sdcard/graphgamemain/main_2_0.txt', 'w')
-except:
-    f = open('main.txt', 'w')
 from os import path, getcwd, listdir
-f.write('2\n')
-f.close()
-
-try:
-    f = open('/sdcard/graphgamemain/main_2_1.txt', 'w')
-except:
-    f = open('main.txt', 'w')
 from random import shuffle
-f.write('3\n')
-f.close()
-
-try:
-    f = open('/sdcard/graphgamemain/main_2_2.txt', 'w')
-except:
-    f = open('main.txt', 'w')
 from kivy.app import App
-f.write('4\n')
-f.close()
-
-try:
-    f = open('/sdcard/graphgamemain/main_2_3.txt', 'w')
-except:
-    f = open('main.txt', 'w')
-from kivy.uix.screenmanager import ScreenManager
-f.write('5\n')
-f.close()
-
-try:
-    f = open('/sdcard/graphgamemain/main_2_4.txt', 'w')
-except:
-    f = open('main.txt', 'w')
 from LoginScreen import LoginScreen
-f.write('6\n')
-f.close()
-
-try:
-    f = open('/sdcard/graphgamemain/main_2_5.txt', 'w')
-except:
-    f = open('main.txt', 'w')
 from QuestionnaireScreen import QuestionnaireScreen
-f.write('7\n')
-f.close()
-
-try:
-    f = open('/sdcard/graphgamemain/main_2_6.txt', 'w')
-except:
-    f = open('main.txt', 'w')
 from ResultsScreen import ResultScreen
-f.write('8\n')
-f.close()
-
-try:
-    f = open('/sdcard/graphgamemain/main_2_7.txt', 'w')
-except:
-    f = open('main.txt', 'w')
 from GraphGameScreen import GraphGameScreen
-f.write('9\n')
-f.close()
-
-try:
-    f = open('/sdcard/graphgamemain/main_2_8.txt', 'w')
-except:
-    f = open('main.txt', 'w')
 from SupplementaryFiles.GraphSaveLoad import load_graph_from_json, save_graph_json
-f.write('10\n')
-f.close()
-
-try:
-    f = open('/sdcard/graphgamemain/main_2_9.txt', 'w')
-except:
-    f = open('main.txt', 'w')
 from SupplementaryFiles.Utils import Utils
-f.write('11\n')
-f.close()
-
-try:
-    f = open('/sdcard/graphgamemain/main_2_10.txt', 'w')
-except:
-    f = open('main.txt', 'w')
 from KivyFiles.Questions.QuestionObject import QuestionObject
-f.write('12\n')
-f.close()
-
-try:
-    f = open('/sdcard/graphgamemain/main_2_11.txt', 'w')
-except:
-    f = open('main.txt', 'w')
 from SupplementaryFiles.GLogger import *
-f.write('13\n')
-f.close()
-
-try:
-    f = open('/sdcard/graphgamemain/main_2_12.txt', 'w')
-except:
-    f = open('main.txt', 'w')
 from KivyCommunication import *
-f.write('14\n')
-f.close()
-
-try:
-    f = open('/sdcard/graphgamemain/main_2_13.txt', 'w')
-except:
-    f = open('main.txt', 'w')
 from SupplementaryFiles.Enums import Colours, QuestionTypes
-f.write('14\n')
-f.close()
-
 from kivy.logger import Logger
+from kivy.uix.screenmanager import ScreenManager, Screen
 
 
 CONFIG_FILE_PATH = "game_config.txt"
 GRAPH_CONFIG_PATH = "graph_config.txt"
 GET_RANDOM_QUESTIONS = 1
+
+class ZeroScreen(Screen):
+
+    def on_enter(self, *args):
+        KL.restart()
+
+    def start(self):
+        self.ids['subject_id'].bind(text=self.ids['subject_id'].on_text_change)
+
 
 class GraphGameMainApp(App):
 
@@ -151,11 +55,16 @@ class GraphGameMainApp(App):
         graph_config_path = self.config['Default']['graph_config_path']
         self.sm = ScreenManager()
 
-        # Setting up the login screen separately
-        login_screen = LoginScreen(name='LoginScreen')
-        login_screen.setup(main_app=self)
-        login_screen.add_widget(login_screen.display.layout)
-        self.sm.add_widget(login_screen)
+        screen = ZeroScreen()
+        screen.start()
+        screen.ids['subject_id'].bind(text=screen.ids['subject_id'].on_text_change)
+        self.sm.add_widget(screen)
+
+        # # Setting up the login screen separately
+        # login_screen = LoginScreen(name='LoginScreen')
+        # login_screen.setup(main_app=self)
+        # login_screen.add_widget(login_screen.display.layout)
+        # self.sm.add_widget(login_screen)
 
         graph_list = self.load_graphs_from_folder()
 
@@ -169,8 +78,6 @@ class GraphGameMainApp(App):
             # Step 1 - Graph Game
             self.question_list = graph_data.question_object_list
             self.game_screen.append(GraphGameScreen(name='game_graph_' + str(i_net)))
-            Logger.debug("6")
-            Logger.info("6")
             self.game_screen[-1].setup(number=i_net,
                                        main_app=self,
                                        max_turns=int(self.config['Default']['max_turns']),
@@ -178,26 +85,15 @@ class GraphGameMainApp(App):
                                        graph=graph_data,
                                        graph_config=graph_config_path,
                                        button_presses=self.button_presses)
-            Logger.debug("6-1")
-            Logger.info("6-1")
             self.game_screen[-1].add_widget(self.game_screen[-1].graph_game.layout)
             # Step 2 - Questionnaire
             #Goren - run nine graphs with question and then one without
             if i_net <9:
-                Logger.debug("6-2")
-                Logger.info("6-2")
                 self.game_screen.append(QuestionnaireScreen(name='game_questionnaire_' + str(i_net)))
-                Logger.debug("6-2.1")
-                Logger.info("6-2.1")
                 self.game_screen[-1].setup(number=i_net,
                                            main_app=self,
                                            real_user=self.real_user)
-                Logger.debug("6-2.2")
-                Logger.info("6-2.2")
                 self.game_screen[-1].add_widget(self.game_screen[-1].questionnaire.the_widget)
-
-                Logger.debug("6-3")
-                Logger.info("6-3")
                 # Step 3 - Results
                 self.game_screen.append(ResultScreen(name='game_results_' + str(i_net)))
                 self.game_screen[-1].setup(number=i_net,
@@ -209,8 +105,7 @@ class GraphGameMainApp(App):
         for gs in self.game_screen:
             self.sm.add_widget(gs)
 
-        Logger.debug("8")
-        self.sm.current = 'LoginScreen'
+        self.sm.current = 'zero_screen'
         return self.sm
 
     def init_communication(self):
