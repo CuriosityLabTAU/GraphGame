@@ -21,7 +21,7 @@ n_tries = 100
 x_min = int(config["NodeData"]["NodeSize"])
 x_max = 4000 # int(config["GeneralParams"]["GraphSizeX"]) - int(config["NodeData"]["NodeSize"])
 y_min = int(config["NodeData"]["NodeSize"])
-y_max = 4000 # int(config["GeneralParams"]["GraphSizeY"]) - int(config["NodeData"]["NodeSize"])
+y_max = 3500 # int(config["GeneralParams"]["GraphSizeY"]) - int(config["NodeData"]["NodeSize"])
 
 
 screen_types = {
@@ -116,7 +116,7 @@ while len(candidate_graphs) < 15:
                     print('found good graph!!!')
                     candidate_graphs.append((graph))
                     i_graph = len(candidate_graphs)
-                    save_graph_json(graph, "Graph_study_%s_%d.json" % (the_type, i_graph))
+                    save_graph_json(graph, "Graph_study_%s_%d.json" % (the_type, i_graph+4))
                     plt.clf()
                     plot_graph(graph, show=False)
                     plt.savefig("Graph_study_%d.png" % i_graph)
