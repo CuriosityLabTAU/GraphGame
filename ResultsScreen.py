@@ -94,11 +94,10 @@ class ResultScreen(Screen):
 
         try:
             self.main_app.sm.current = 'game_graph_' + str(self.game_number + 1)
-
         except Exception as e:
             GLogger.log(logging.INFO,"", action=LogAction.data, obj='game_results_', comment='the_end - {}'.format(e), sync=True)
             #Goren - putted the next line in comment
-            #self.end_subject()
+            self.end_subject()
 
     def end_subject(self):
         KL.log.insert(action=LogAction.data, comment='end game')
