@@ -19,9 +19,9 @@ buttons = np.array([1,2,4,3,4,2])
 n_tries = 100
 
 x_min = int(config["NodeData"]["NodeSize"])
-x_max = 3500 # int(config["GeneralParams"]["GraphSizeX"]) - int(config["NodeData"]["NodeSize"])
+x_max = 4000 # int(config["GeneralParams"]["GraphSizeX"]) - int(config["NodeData"]["NodeSize"])
 y_min = int(config["NodeData"]["NodeSize"])
-y_max = 3500 # int(config["GeneralParams"]["GraphSizeY"]) - int(config["NodeData"]["NodeSize"])
+y_max = 4000 # int(config["GeneralParams"]["GraphSizeY"]) - int(config["NodeData"]["NodeSize"])
 
 
 screen_types = {
