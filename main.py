@@ -21,7 +21,7 @@ CONFIG_FILE_PATH = "game_config.txt"
 GRAPH_CONFIG_PATH = "graph_config.txt"
 GET_RANDOM_QUESTIONS = 1
 
-number_of_graphs = 0
+number_of_graphs = 10
 
 
 class ZeroScreen(Screen):
@@ -32,6 +32,9 @@ class ZeroScreen(Screen):
     def start(self):
         self.ids['subject_id'].bind(text=self.ids['subject_id'].on_text_change)
 
+
+class FinalScreen(Screen):
+    pass
 
 class GraphGameMainApp(App):
 
@@ -62,6 +65,10 @@ class GraphGameMainApp(App):
         screen.start()
         screen.ids['subject_id'].bind(text=screen.ids['subject_id'].on_text_change)
         self.sm.add_widget(screen)
+
+        screen = FinalScreen()
+        self.sm.add_widget(screen)
+
 
         # # Setting up the login screen separately
         # login_screen = LoginScreen(name='LoginScreen')

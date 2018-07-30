@@ -109,3 +109,25 @@
             pos: root.width * 0.55 - self.width * 0.5, root.height * 0.75 - self.height * 0.5
 
 
+<FinalScreen>:
+    finish_button_pre: finish_button_pre
+    name: 'final_screen'
+    Widget:
+        Label:
+            text: "!תפתתשהש הדות"
+            font_size: 48
+            font_name: "fonts/the_font_bold.ttf"
+            size: root.width * 0.175, root.height * 0.2
+            pos: root.width * 0.85 - self.width * 0.5, root.height * 0.75 - self.height * 0.5
+
+        LoggedButton:
+            id: finish_button_pre
+            name: 'finish_button_pre'
+            background_color: 1,0,1,1
+            background_normal: ''
+            text: 'םויס'
+            font_name: "fonts/the_font_bold.ttf"
+            font_size: 32
+            size: root.width * 0.15, root.height * 0.15
+            pos: root.width * 0.15 - self.width * 0.5, root.height * 0.75 - self.height * 0.5
+            on_press: app.stop()
